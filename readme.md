@@ -4,9 +4,21 @@ Minimal CSS framework. Simple as potato.
 
 ## Installation
 
+ToDo: Complete this section.
+
 ## Usage
 
+ToDo: Complete this section.
+
 ## Contributing
+
+ToDo: Complete this section.
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b feature/NEW_FEATURE`
+3. Commit your changes: `git commit -am 'Added feature/NEW_FEATURE'`
+4. Push to the branch: `git push origin feature/NEW_FEATURE`
+5. Submit a pull request
 
 ## Credits
 
