@@ -14,50 +14,68 @@ html, body {
     color: #333;
 }
 
-.potato-one {
-  width: 100%;
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.potato-two {
-  width: 50%;
+.potato, .potatoes {
+    width: 100%;
+    float: left;
 }
 
-.potato-three {
-  width: 33.33333%;
+.container:after, .row:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.potato-four {
-  width: 25%;
+.one.potato, .one.potatoes {
+    width: 8.33334%;
 }
 
-.potato-five {
-  width: 20%;
+.two.potatoes {
+    width: 16.33334%;
 }
 
-.potato-six {
-  width: 16.66667%;
+.three.potatoes {
+    width: 24.9%;
 }
 
-.potato-seven {
-  width: 14.28571%;
+.four.potatoes {
+    width: 33.33332%;
 }
 
-.potato-eight {
-  width: 12.5%;
+.five.potatoes {
+    width: 41.66665%;
 }
 
-.potato-nine {
-  width: 11.11111%;
+.six.potatoes {
+    width: 49.99998%;
 }
 
-.potato-ten {
-  width: 10%;
+.seven.potatoes {
+    width: 58.33331%;
 }
 
-.potato-eleven {
-  width: 9.09091%;
+.eight.potatoes {
+    width: 66.66664%;
 }
 
-.potato-twelve {
-  width: 8.33333%;
+.nine.potatoes {
+    width: 74.99997%;
+}
+
+.ten.potatoes {
+    width: 83.33334%;
+}
+
+.eleven.potatoes {
+    width: 91.66663%;
+}
+
+.twelve.potatoes {
+    width: 100%;
 }
