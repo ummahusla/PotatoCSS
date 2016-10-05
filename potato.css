@@ -13,3 +13,51 @@ html, body {
     line-height: 1.5;
     color: #333;
 }
+
+.potato-one {
+  width: 100%;
+}
+
+.potato-two {
+  width: 50%;
+}
+
+.potato-three {
+  width: 33.33333%;
+}
+
+.potato-four {
+  width: 25%;
+}
+
+.potato-five {
+  width: 20%;
+}
+
+.potato-six {
+  width: 16.66667%;
+}
+
+.potato-seven {
+  width: 14.28571%;
+}
+
+.potato-eight {
+  width: 12.5%;
+}
+
+.potato-nine {
+  width: 11.11111%;
+}
+
+.potato-ten {
+  width: 10%;
+}
+
+.potato-eleven {
+  width: 9.09091%;
+}
+
+.potato-twelve {
+  width: 8.33333%;
+}
