@@ -28,11 +28,13 @@ html, body {
     position: relative;
     width: 96%;
 }
+
 .row .potato, .row .potatoes {
   float: left;
   margin: 8px 2%;
   min-height: 2px;
 }
+
 .container:after, .row:after {
     content: "";
     clear: both;
@@ -195,4 +197,54 @@ html, body {
     .twelve-large.potatoes {
         width: 96%;
     }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.font-light {
+  font-weight: lighter;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Unordered list markers */
+.l-circle-item {
+  list-style-type: circle;
+}
+
+.l-square-item {
+  list-style-type: square;
+}
+
+.l-roman-item {
+  list-style-type: upper-roman;
+}
+
+.l-alpha-item {
+  list-style-type: lower-alpha;
 }
