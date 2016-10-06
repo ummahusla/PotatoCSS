@@ -1,8 +1,10 @@
+/* Font */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i);
 
+/* Global */
 html, body {
     height: 100%;
-    width: 100%;
+    width: 96%;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -14,68 +16,183 @@ html, body {
     color: #333;
 }
 
+/* Grid */
 .container {
     position: relative;
-    width: 100%;
+    width: 96%;
     max-width: 960px;
     margin: 0 auto;
 }
 
-.potato, .potatoes {
-    width: 100%;
-    float: left;
+.row {
+    position: relative;
+    width: 96%;
 }
-
+.row .potato, .row .potatoes {
+  float: left;
+  margin: 8px 2%;
+  min-height: 2px;
+}
 .container:after, .row:after {
     content: "";
     clear: both;
     display: table;
 }
 
-.one.potato, .one.potatoes {
-    width: 8.33334%;
+.potato, .potatoes {
+    width: 96%;
+    float: left;
 }
 
-.two.potatoes {
-    width: 16.33334%;
+/* Small - Mobile */
+.one-small.potato, .one-small.potatoes {
+    width: 4.33%;
 }
 
-.three.potatoes {
-    width: 24.9%;
+.two-small.potatoes {
+    width: 12.66%;
 }
 
-.four.potatoes {
-    width: 33.33332%;
+.three-small.potatoes {
+    width: 21%;
 }
 
-.five.potatoes {
-    width: 41.66665%;
+.four-small.potatoes {
+    width: 29.33%;
 }
 
-.six.potatoes {
-    width: 49.99998%;
+.five-small.potatoes {
+    width: 37.66%;
 }
 
-.seven.potatoes {
-    width: 58.33331%;
+.six-small.potatoes {
+    width: 46%;
 }
 
-.eight.potatoes {
-    width: 66.66664%;
+.seven-small.potatoes {
+    width: 54.33%;
 }
 
-.nine.potatoes {
-    width: 74.99997%;
+.eight-small.potatoes {
+    width: 62.66%;
 }
 
-.ten.potatoes {
-    width: 83.33334%;
+.nine-small.potatoes {
+    width: 71%;
 }
 
-.eleven.potatoes {
-    width: 91.66663%;
+.ten-small.potatoes {
+    width: 79.33%;
 }
 
-.twelve.potatoes {
-    width: 100%;
+.eleven-small.potatoes {
+    width: 87.66%;
+}
+
+.twelve-small.potatoes {
+    width: 96%;
+}
+
+/* Medium - Tablet */
+@media screen and (min-width: 40em) {
+
+    .one-medium.potato, .one-medium.potatoes {
+        width: 4.33%;
+    }
+
+    .two-medium.potatoes {
+        width: 12.66%;
+    }
+
+    .three-medium.potatoes {
+        width: 21%;
+    }
+
+    .four-medium.potatoes {
+        width: 29.33%;
+    }
+
+    .five-medium.potatoes {
+        width: 37.66%;
+    }
+
+    .six-medium.potatoes {
+        width: 46%;
+    }
+
+    .seven-medium.potatoes {
+        width: 54.33%;
+    }
+
+    .eight-medium.potatoes {
+        width: 62.66%;
+    }
+
+    .nine-medium.potatoes {
+        width: 71%;
+    }
+
+    .ten-medium.potatoes {
+        width: 79.33%;
+    }
+
+    .eleven-medium.potatoes {
+        width: 87.66%;
+    }
+
+    .twelve-medium.potatoes {
+        width: 96%;
+    }
+
+}
+
+/* large - Desktop */
+@media screen and (min-width: 64em) {
+    .one-large.potato, .one-large.potatoes {
+        width: 4.33%;
+    }
+
+    .two-large.potatoes {
+        width: 12.66%;
+    }
+
+    .three-large.potatoes {
+        width: 21%;
+    }
+
+    .four-large.potatoes {
+        width: 29.33%;
+    }
+
+    .five-large.potatoes {
+        width: 37.66%;
+    }
+
+    .six-large.potatoes {
+        width: 46%;
+    }
+
+    .seven-large.potatoes {
+        width: 54.33%;
+    }
+
+    .eight-large.potatoes {
+        width: 62.66%;
+    }
+
+    .nine-large.potatoes {
+        width: 71%;
+    }
+
+    .ten-large.potatoes {
+        width: 79.33%;
+    }
+
+    .eleven-large.potatoes {
+        width: 87.66%;
+    }
+
+    .twelve-large.potatoes {
+        width: 96%;
+    }
 }
