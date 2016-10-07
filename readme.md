@@ -1,6 +1,8 @@
 # Potato CSS
-
-Minimal CSS framework. Simple as potato.
+<p align="center">
+    <img align="center" src="https://avatars2.githubusercontent.com/u/20952276?v=3&s=200" alt="PotatoCSS">
+</p>
+> Minimalist CSS framework for hackers. Simple as potato.
 
 ## Installation
 
