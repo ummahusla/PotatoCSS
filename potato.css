@@ -1,5 +1,5 @@
 /* Font */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i);
 
 /* Global */
 html, body {
@@ -11,7 +11,7 @@ html, body {
 }
 
 * {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: #333;
 }
