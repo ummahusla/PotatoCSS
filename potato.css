@@ -309,3 +309,77 @@ h6 {
 .l-alpha-item {
   list-style-type: lower-alpha;
 }
+
+/* Button classes */
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  background: white;
+  color: #000;
+  padding: 7px 10px 7px 10px;
+  opacity: 0.9;
+}
+
+.btn-large-text {
+  font-size: 20px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-lg {
+  padding: 14px 17px 14px 17px;
+}
+
+.btn-md {
+  padding:9px 12px 9px 12px;
+}
+
+.btn-sm {
+  padding: 2px 5px 2px 5px;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-navy {
+  background: #1974D2;
+  color: white;
+}
+
+.btn-teal {
+  background: #008080;
+  color: white;
+}
+
+.btn-warn {
+  background: #C80815;
+  color: white;
+}
+
+.btn-success {
+  background: #0BDA51;
+  color: white;
+}
+
+.btn-potato {
+  background: #9F8170;
+  color: white;
+}
+
+.btn-dark {
+  background: #333;
+  color: white;
+}
+
+.btn-link {
+  background: transparent !important;
+  color: blue;
+  text-decoration: underline;
+}
