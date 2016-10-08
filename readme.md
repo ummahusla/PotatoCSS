@@ -2,6 +2,7 @@
 <p align="center">
     <img align="center" src="https://avatars2.githubusercontent.com/u/20952276?v=3&s=200" alt="PotatoCSS">
 </p>
+
 > Minimalist CSS framework for hackers. Simple as potato.
 
 ## Installation
@@ -14,20 +15,16 @@ ToDo: Complete this section.
 
 ## Contributing
 
-ToDo: Complete this section.
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b feature/NEW_FEATURE`
-3. Commit your changes: `git commit -am 'Added feature/NEW_FEATURE'`
-4. Push to the branch: `git push origin feature/NEW_FEATURE`
-5. Submit a pull request
+Please read [**contributing guide**](contributing.md).
 
 ## Credits
 
-Potato CSS was created as a [**hacktoberfest**](https://hacktoberfest.digitalocean.com/) projects by [**Edvins Antonovs**](https://github.com/ummahusla).
+[**PotatoCSS**](https://github.com/PotatoCSS/PotatoCSS) was created as a [**hacktoberfest**](https://hacktoberfest.digitalocean.com/) project. **PotatoCSS** is created and maintained by [**Edvins Antonovs**](https://github.com/ummahusla).
+
+Big thanks to all **contributors**.
 
 ## License
-
+```
 MIT License
 
 Copyright (c) 2016 Edvins Antonovs
@@ -49,3 +46,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
