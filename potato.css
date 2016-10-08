@@ -377,18 +377,18 @@ hr {
 }
 
 /* Unordered list markers */
-.l-circle-item {
+.circle-potato {
   list-style-type: circle;
 }
 
-.l-square-item {
+.square-potato {
   list-style-type: square;
 }
 
-.l-roman-item {
+.roman-potato {
   list-style-type: upper-roman;
 }
 
-.l-alpha-item {
+.alpha-potato {
   list-style-type: lower-alpha;
 }
