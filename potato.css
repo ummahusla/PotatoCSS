@@ -16,6 +16,67 @@ html, body {
     color: #333;
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 1.750em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.250em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 40em) {
+    h1 {
+        font-size: 1.875em;
+    }
+
+    h2 {
+        font-size: 1.625em;
+    }
+
+    h3 {
+        font-size: 1.375em;
+    }
+
+    h4 {
+        font-size: 1.250em;
+    }
+
+    h5 {
+        font-size: 1.125em;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+}
+
+
 /* Grid */
 .container {
     position: relative;
