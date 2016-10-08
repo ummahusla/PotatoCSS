@@ -90,10 +90,15 @@ h6 {
     width: 96%;
 }
 
+.potato, .potatoes {
+    width: 96%;
+    float: left;
+}
+
 .row .potato, .row .potatoes {
-  float: left;
-  margin: 8px 2%;
-  min-height: 2px;
+    float: left;
+    margin: 8px 2%;
+    min-height: 2px;
 }
 
 .container:after, .row:after {
@@ -102,10 +107,7 @@ h6 {
     display: table;
 }
 
-.potato, .potatoes {
-    width: 96%;
-    float: left;
-}
+
 
 /* Small - Mobile */
 .one-small.potato, .one-small.potatoes {
@@ -258,6 +260,87 @@ h6 {
     .twelve-large.potatoes {
         width: 96%;
     }
+}
+
+/* Other */
+hr {
+    position: relative;
+    width: 96%;
+    border: solid #ccc;
+    border-width: 1px 0 0;
+    clear: both;
+}
+
+/* Buttons */
+.button {
+    background-color: #3498db;
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 14px 20px;
+    margin: 0 0 20px 0;
+    font-size: 1em;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.button:hover, .button:focus {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.button.success {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.button.success:hover, .button.success:focus {
+    background-color: #089041;
+    color: #fff;
+}
+
+.button.warning {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.button.warning:hover, .button.warning:focus {
+    background-color: #ca7f08;
+    color: #fff;
+}
+
+.button.danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.button.danger:hover, .button.danger:focus {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.button.small {
+    padding: 10px 16px;
+    font-size: 0.750em;
+}
+
+.button.large {
+    padding: 16px 30px;
+    font-size: 1.5em;
+}
+
+.button.expanded {
+    display: block;
+    max-width: 100%;
 }
 
 /* Utilities */
