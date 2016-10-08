@@ -16,6 +16,18 @@ html, body {
     color: #333;
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif !important;
+    color: #333;
+    margin: 5px 0;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.5;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+}
+
 /* Grid */
 .container {
     position: relative;
