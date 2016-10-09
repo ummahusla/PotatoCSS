@@ -273,14 +273,14 @@ hr {
 
 /* Buttons */
 .button {
-    background-color: #3498db;
-    border: 1px solid transparent;
-    color: #fff;
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
     display: inline-block;
     text-align: center;
     line-height: 1;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 4px;
     padding: 14px 20px;
     margin: 0 0 20px 0;
     font-size: 1em;
@@ -294,37 +294,40 @@ hr {
 }
 
 .button:hover, .button:focus {
-    background-color: #2980b9;
+    background-color: #333;
     color: #fff;
 }
 
 .button.success {
+    background-color: #fff;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.button.success:hover, .button.success:focus {
     background-color: #27ae60;
     color: #fff;
 }
 
-.button.success:hover, .button.success:focus {
-    background-color: #089041;
-    color: #fff;
+.button.warning {
+    background-color: #fff;
+    color: #f39c12;
+    border: 1px solid #f39c12;
 }
 
-.button.warning {
+.button.warning:hover, .button.warning:focus {
     background-color: #f39c12;
     color: #fff;
 }
 
-.button.warning:hover, .button.warning:focus {
-    background-color: #ca7f08;
-    color: #fff;
-}
-
 .button.danger {
-    background-color: #e74c3c;
-    color: #fff;
+    background-color: #fff;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
 }
 
 .button.danger:hover, .button.danger:focus {
-    background-color: #c0392b;
+    background-color: #e74c3c;
     color: #fff;
 }
 
