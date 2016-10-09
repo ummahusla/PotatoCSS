@@ -12,14 +12,16 @@ html, body {
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     line-height: 1.5;
     color: #333;
+
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     margin: 5px 0;
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
     line-height: 1.5;
     text-transform: none;
@@ -106,8 +108,6 @@ h6 {
     clear: both;
     display: table;
 }
-
-
 
 /* Small - Mobile */
 .one-small.potato, .one-small.potatoes {
@@ -260,6 +260,53 @@ h6 {
     .twelve-large.potatoes {
         width: 96%;
     }
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], select, textarea {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 4px;
+    display: block;
+    font-size: 1em;
+    line-height: 1;
+    height: 46px;
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 150px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label  {
+    display: inline-block;
+}
+
+::-webkit-input-placeholder {
+   color: #333;
+}
+
+:-moz-placeholder {
+   color: #333;
+}
+
+::-moz-placeholder {
+   color: #333;
+}
+
+:-ms-input-placeholder {
+   color: #333;
 }
 
 /* Other */
