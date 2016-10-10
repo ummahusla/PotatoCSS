@@ -11,7 +11,7 @@ You can request a new feature by submitting it in the `feature` branch.
 5. Submit a pull request!
 
 # Bug report
-If you find a critical bug in the source code or a mistake in the documentation, you can help us by submitting it in the `hotfix` branch.
+Found a critical bug in the source code or a mistake in the documentation? Please consider submitting a [**new issue**](https://github.com/PotatoCSS/PotatoCSS/issues) and with a description what went wrong. Moreover, if you know how to fix it, please don't hesitate and send me a `Pull Request`.
 
 1. Fork it!
 2. Create your hotfix branch: `git checkout -b hotfix/POTATO_BUG`
