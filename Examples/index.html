@@ -1,43 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Demo Page</title>
-    <link rel="stylesheet" type="text/css" href="../potato.css">
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Demo Page</title>
+	    <link rel="stylesheet" type="text/css" href="../potato.css">
 
-</head>
+	    <style type="text/css">
+	    	body{
+	    		background: purple;
+	    	}
 
-<body>
-	<div class='container'>
-		<ul>
-			<li class='l-circle-item text-center'>Text Center + Circle list marker</li>
-			<li class='l-roman-item font-bold'>Font Bold + Roman list marker</li>
-			<li class='l-square-item font-light'>Font Light + Square list marker</li>
-			<li class='l-alpha-item text-right'>Text Right + Alpha list marker</li>
-		</ul>
-		
-		<table>
-			<tr class='row'>
-				<td><h1>h1</h1></td>
-			</tr>
-			<tr class='row'>
-				<td><h2>h2</h2></td>
-			</tr>
-			<tr class='row'>
-				<td><h3>h3</h3></td>
-			</tr>
-			<tr class='row'>
-				<td><h4>h4</h4></td>
-			</tr>
-			<tr class='row'>
-				<td><h5>h5</h5></td>
-			</tr>
-			<tr class='row'>
-				<td><h6>h6</h6></td>
-			</tr>
-		</table>
+	    	.description{
+	    		padding-top: 20px;
+	    		padding-bottom: 10px;
+	    	}
 
+	    	.heading{
+	    		padding: 20px;
+	    	}
+
+	    	div.img {
+	    		margin: 15px;
+	    		border-radius: 4px;
+	    
+	}
+
+	.img :hover{
+	    
+	    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	}
+
+	div.img img {
+	    object-fit: cover;
+	    width: 100%;
+	    height: auto;
+	    -webkit-transform: scale(1);
+		transform: scale(1);
+	    -webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+
+	div.desc {
+	    padding: 15px;
+	}
+	    </style>
+	</head>
+
+	<body>
+		<div class='container'>
+
+		<h1 class="text-center font-bold heading"> Welcome to Potato World ! </h1>
+
+		<p class="description font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec magna posuere, facilisis elit eget, efficitur nisi. Nulla blandit, risus vitae eleifend euismod, odio nisl scelerisque tellus, sed dapibus diam urna facilisis neque. Cras consectetur purus et ultrices auctor. Duis tellus lorem, sollicitudin et imperdiet lacinia, tristique a sapien. In malesuada efficitur diam, sed iaculis elit ornare et. Praesent molestie arcu a est hendrerit pulvinar. Donec eu dolor eu dolor suscipit condimentum. Sed semper non nunc eu dignissim. Cras sit amet egestas libero. Praesent porttitor sed ex sed ullamcorper. Nulla vitae orci elit. Nulla facilisi. Cras tristique ex nec egestas pharetra. Sed malesuada interdum sem, venenatis cursus purus consequat sed.<br>
+
+	Etiam suscipit finibus odio, vel cursus orci sagittis ut. Suspendisse massa erat, aliquet non feugiat in, fringilla in lorem. Mauris accumsan purus ut felis finibus, ac efficitur augue interdum. Etiam imperdiet posuere ornare. Sed lacinia elit fermentum est ultrices consequat. Sed pharetra dui sit amet ultricies dapibus. Ut elementum lectus ut neque facilisis hendrerit. Donec at semper ipsum, et ornare dolor. Vivamus mattis felis sed lorem pharetra, eget porta dui aliquet. Praesent vitae eros a augue luctus cursus. Nam sagittis lorem quis auctor aliquam. Nullam urna nulla, faucibus id turpis ut, elementum vestibulum lectus. Nunc sed odio eu dolor convallis iaculis eget tincidunt nulla.<br>
+
+	Praesent venenatis felis non erat iaculis commodo. Sed non felis urna. Vivamus a lacinia nunc. Mauris blandit, mauris et sodales vehicula, diam est suscipit diam, non scelerisque tortor metus eget risus. Nunc fringilla tincidunt efficitur. Vestibulum augue lacus, dictum vitae ullamcorper nec, porttitor varius dolor. Maecenas neque metus, volutpat ut semper quis, sodales quis mauris. Morbi ultrices commodo nisi vel interdum. Integer id ultrices sapien. Cras mollis velit a sapien molestie, sit amet semper est consequat. Integer commodo erat vel urna facilisis cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla lobortis condimentum eros. Sed at ex sit amet eros tincidunt euismod et bibendum sapien. Nam vestibulum posuere felis, sed pharetra odio varius malesuada.<br>
+
+	Suspendisse ornare vel diam et dignissim. Aliquam erat volutpat. Quisque turpis nulla, efficitur at ligula non, volutpat commodo nulla. Aliquam erat volutpat. Nam quis faucibus magna, in dictum nisl. In sodales nunc et odio tincidunt, nec efficitur mi maximus. Suspendisse potenti. Aliquam consequat quam quis condimentum pellentesque. Donec lacinia rhoncus nisi, a faucibus lorem sagittis quis. Vestibulum id tempor libero.
+
+	Nulla sem enim, vestibulum sit amet odio ut, tempor varius arcu. Sed a sodales ex, quis cursus odio. Curabitur pharetra tempus metus sed varius. Mauris pharetra felis volutpat, consequat urna et, eleifend diam. Nam accumsan non quam quis auctor. Maecenas ultrices lacinia turpis ut rhoncus. Proin euismod ligula a suscipit convallis. Quisque molestie augue metus, vitae bibendum mi ullamcorper venenatis.
+		</p>
+	<div class="container potatoes">
+
+	<div class="img row potatoes three-large three-medium">
+	  <a href="#">
+	    <img src="https://tinyurl.com/z53q6xy" alt="Nature">
+	  </a>
+	  <div class="desc text-center">Nature</div>
 	</div>
-</body>
 
-</html>
+	<div class="img row potatoes three-large three-medium">
+	  <a href="#">
+	    <img src="https://tinyurl.com/h7o44dm" alt="Nature">
+	  </a>
+	  <div class="desc text-center">Beautiful image</div>
+	</div>
+
+	<div class="img row potatoes three-large three-medium">
+	  <a href="#">
+	    <img src="https://tinyurl.com/gw49vxv" alt="Nature">
+	  </a>
+	  <div class="desc text-center">Nature's beauty</div>
+	</div>
+
+	<div class="img row potatoes three-large three-medium">
+	  <a href="#">
+	    <img src="https://tinyurl.com/zpze475" alt="Nature">
+	  </a>
+	  <div class="desc text-center">Snow Tree</div>
+	</div>
+		</div>
+
+	</body>
+
+	</html>
