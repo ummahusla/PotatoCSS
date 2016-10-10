@@ -52,6 +52,11 @@ h6 {
     font-size: 1em;
 }
 
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+}
+
 @media screen and (min-width: 40em) {
     h1 {
         font-size: 1.875em;
