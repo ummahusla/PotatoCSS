@@ -20,4 +20,4 @@ Big thanks to all **contributors**.
 
 ## License
 
-[MIT License](license.md)
+[**MIT License**](license.md)
