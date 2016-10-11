@@ -2,6 +2,9 @@
 
 $sans-serif: 'Roboto', sans-serif;
 
+$primary-color: #333;
+$border-color: #ccc;
+$white-color: #fff;
 $success-color: #27ae60;
 $warning-color: #f39c12;
 $danger-color: #e74c3c;
@@ -43,7 +46,7 @@ html, body {
     font-family: $sans-serif;
     font-weight: lighter;
     line-height: 1.5;
-    color: #333;
+    color: $primary-color;
 }
 
 h1 {
@@ -296,9 +299,9 @@ h6 {
 }
 
 .input_text {
-    background-color: #fff;
-    border: 1px solid #333;
-    color: #333;
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    color: $primary-color;
     border-radius: 4px;
     display: block;
     font-size: 1em;
@@ -372,37 +375,37 @@ input[type="radio"] + label, input[type="checkbox"] + label  {
 }
 
 ::-webkit-input-placeholder {
-   color: #333;
+   color: $primary-color;
 }
 
 :-moz-placeholder {
-   color: #333;
+   color: $primary-color;
 }
 
 ::-moz-placeholder {
-   color: #333;
+   color: $primary-color;
 }
 
 :-ms-input-placeholder {
-   color: #333;
+   color: $primary-color;
 }
 
 /* Other */
 hr {
     position: relative;
     width: $primary-width;
-    border: solid #ccc;
+    border: solid $border-color;
     border-width: 1px 0 0;
     clear: both;
 }
 
 /* Buttons */
 
-@mixin button-border($border-color: #333) {
+@mixin button-border($border-color: $primary-color) {
     border: 1px solid $border-color;
 }
 
-@mixin button-color($background-color: #fff, $color: #333)
+@mixin button-color($background-color: $white-color, $color: $primary-color)
 {
     background-color: $background-color;
     color: $color;
@@ -416,7 +419,7 @@ hr {
 
 @mixin button-config() {
     @include button-color();
-    @include button-border(#333);
+    @include button-border($primary-color);
     @include button-size(14px, 20px, 1em);
     display: inline-block;
     text-align: center;
@@ -437,33 +440,33 @@ hr {
     @include button-config();
 
     &:hover, &:focus {
-        @include button-color(#333, #fff);
+        @include button-color($primary-color, $white-color);
     }
 
     &.success {
-        @include button-color(#fff, $success-color);
+        @include button-color($white-color, $success-color);
         border: 1px solid $success-color;
 
         &:hover, &:focus {
-            @include button-color($success-color, #fff);
+            @include button-color($success-color, $white-color);
         }
     }
 
     &.warning {
-        @include button-color(#fff, $warning-color);
+        @include button-color($white-color, $warning-color);
         border: 1px solid $warning-color;
 
         &:hover, &:focus {
-            @include button-color($warning-color, #fff);
+            @include button-color($warning-color, $white-color);
         }
     }
 
     &.danger {
-        @include button-color(#fff, $danger-color);
+        @include button-color($white-color, $danger-color);
         border: 1px solid $danger-color;
 
         &:hover, &:focus {
-            @include button-color($danger-color, #fff);
+            @include button-color($danger-color, $white-color);
         }
     }
 
