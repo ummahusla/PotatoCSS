@@ -46,7 +46,7 @@ html, body {
 
 * {
     font-family: $sans-serif;
-    font-weight: : lighter;
+    font-weight: lighter;
     line-height: 1.5;
     color: $primary-color;
 }
@@ -400,7 +400,7 @@ hr {
   border: 1px solid $border-color;
 }
 
-@mixin button-color($background-color: $white, $color: $primary-color)
+@mixin button-color($background-color: $white-color, $color: $primary-color)
 {
   background-color: $background-color;
   color: $color;
@@ -409,20 +409,19 @@ hr {
 @mixin button-size($pad1, $pad2, $font)
 {
   padding: $pad1 $pad2;
-  font-size: : $font;
+  font-size: $font;
 }
 
 @mixin button-config() {
   @include button-color();
   @include button-border($primary-color);
+  @include button-size(14px, 20px, 1em);
   display: inline-block;
   text-align: center;
   line-height: 1;
   cursor: pointer;
   border-radius: 4px;
-  padding: 14px 20px;
   margin: 0 0 20px 0;
-  font-size: 1em;
   position: relative;
   white-space: nowrap;
   vertical-align: middle;
@@ -436,7 +435,7 @@ hr {
     @include button-config();
 
     &:hover, &:focus {
-      @include button-color($primary-color, $white);
+      @include button-color($primary-color, $white-color);
     }
     &.success {
       @include button-color($white-color, $green-color);
