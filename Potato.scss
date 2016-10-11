@@ -1,0 +1,523 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i);
+
+$sans-serif: 'Roboto', sans-serif;
+$primary-color: #333;
+$border-color: #ccc;
+$white-color: #fff;
+$green-color: #27ae60;
+$yellow-color: #f39c12;
+$pink-color: #e74c3c;
+$primary-width: 96%;
+$one-width: 4.33%;
+$two-width: 12.66%;
+$three-width: 21%;
+$four-width: 29.33%;
+$five-width: 37.66%;
+$six-width: 46%;
+$seven-width: 54.33%;
+$eight-width: 62.66%;
+$nine-width: 71%;
+$ten-width: 79.33%;
+$eleven-width: 87.66%;
+
+/*Global*/
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin width-potatoes($width){
+    width: $width;
+}
+
+/*Typography*/
+@mixin typography($numeral: 0) {
+    margin: 5px 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    font-size: (1 + $numeral/8 ) * 1em;
+}
+
+* {
+    font-family: $sans-serif;
+    font-weight: : lighter;
+    line-height: 1.5;
+    color: $primary-color;
+}
+
+
+
+h1 {
+    @include typography(6);
+}
+
+h2 {
+    @include typography(4);
+}
+
+h3 {
+    @include typography(2);
+}
+
+h4 {
+    @include typography(1);
+}
+
+h5 {
+    @include typography();
+}
+
+h6 {
+    @include typography();
+}
+
+
+@media screen and (min-width: 40em) {
+    h1 {
+        @include typography(7);
+    }
+
+    h2 {
+        @include typography(5);
+    }
+
+    h3 {
+        @include typography(3);
+    }
+
+    h4 {
+        @include typography(2);
+    }
+
+    h5 {
+        @include typography(1);
+    }
+
+    h6 {
+        @include typography();
+    }
+}
+
+/* Grid */
+.container {
+    @include width-potatoes($primary-width);
+    position: relative;
+    max-width: 10 * $primary-width;
+    margin: 0 auto;
+}
+
+.row {
+    position: relative;
+    width: $primary-width;
+    .potato, .potatoes {
+        float: left;
+        margin: 8px 2%;
+        min-height: 2px;
+    }
+}
+
+.container {
+    &:after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+}
+
+.potato, .potatoes {
+    @include width-potatoes($primary-width);
+    float: left;
+}
+
+/* Small - Mobile */
+.one-small {
+    &.potato, &.potatoes {
+        @include width-potatoes($one-width);
+    }
+}
+
+.two-small.potatoes {
+    @include width-potatoes($two-width);
+}
+
+.three-small.potatoes {
+    @include width-potatoes($three-width);
+}
+
+.four-small.potatoes {
+    @include width-potatoes($four-width);
+}
+
+.five-small.potatoes {
+    @include width-potatoes($five-width);
+}
+
+.six-small.potatoes {
+    @include width-potatoes($six-width);
+}
+
+.seven-small.potatoes {
+    @include width-potatoes($seven-width);
+}
+
+.eight-small.potatoes {
+    @include width-potatoes($eight-width);
+}
+
+.nine-small.potatoes {
+    @include width-potatoes($nine-width);
+}
+
+.ten-small.potatoes {
+    @include width-potatoes($ten-width);
+}
+
+.eleven-small.potatoes {
+    @include width-potatoes($eleven-width);
+}
+
+.twelve-small.potatoes {
+    @include width-potatoes($primary-width);
+}
+
+/* Medium - Tablet */
+@media screen and (min-width: 40em) {
+    .one-medium {
+        &.potato, &.potatoes {
+              @include width-potatoes($one-width);
+        }
+    }
+
+    .two-medium.potatoes {
+        @include width-potatoes($two-width);
+    }
+
+    .three-medium.potatoes {
+        @include width-potatoes($three-width);
+    }
+
+    .four-medium.potatoes {
+        @include width-potatoes($four-width);
+    }
+
+    .five-medium.potatoes {
+        @include width-potatoes($five-width);
+    }
+
+    .six-medium.potatoes {
+        @include width-potatoes($six-width);
+    }
+
+    .seven-medium.potatoes {
+        @include width-potatoes($seven-width);
+    }
+
+    .eight-medium.potatoes {
+        @include width-potatoes($eight-width);
+    }
+
+    .nine-medium.potatoes {
+        @include width-potatoes($nine-width);
+    }
+
+    .ten-medium.potatoes {
+        @include width-potatoes($ten-width);
+    }
+
+    .eleven-medium.potatoes {
+        @include width-potatoes($eleven-width);
+    }
+
+    .twelve-medium.potatoes {
+        @include width-potatoes($primary-width);
+    }
+
+}
+
+/* large - Desktop */
+@media screen and (min-width: 64em) {
+    .one-large {
+        &.potato, &.potatoes {
+        @include width-potatoes($one-width);
+        }
+    }
+
+    .two-large.potatoes {
+        @include width-potatoes($two-width);
+    }
+
+    .three-large.potatoes {
+        @include width-potatoes($three-width);
+    }
+
+    .four-large.potatoes {
+        @include width-potatoes($four-width);
+    }
+
+    .five-large.potatoes {
+        @include width-potatoes($five-width);
+    }
+
+    .six-large.potatoes {
+        @include width-potatoes($six-width);
+    }
+
+    .seven-large.potatoes {
+        @include width-potatoes($seven-width);
+    }
+
+    .eight-large.potatoes {
+        @include width-potatoes($eight-width);
+    }
+
+    .nine-large.potatoes {
+        @include width-potatoes($nine-width);
+    }
+
+    .ten-large.potatoes {
+        @include width-potatoes($ten-width);
+    }
+
+    .eleven-large.potatoes {
+        @include width-potatoes($eleven-width);
+    }
+
+    .twelve-large.potatoes {
+        @include width-potatoes($primary-width);
+    }
+}
+
+.input_text {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 4px;
+    display: block;
+    font-size: 1em;
+    line-height: 1;
+    height: 46px;
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    @extend .input_text;
+}
+
+input[type="password"] {
+    @extend .input_text;
+}
+
+input[type="date"] {
+    @extend .input_text;
+}
+
+input[type="datetime"] {
+    @extend .input_text;
+}
+
+input[type="email"] {
+    @extend .input_text;
+}
+
+input[type="number"] {
+    @extend .input_text;
+}
+
+input[type="tel"] {
+    @extend .input_text;
+}
+
+input[type="time"] {
+    @extend .input_text;
+}
+
+input[type="url"] {
+    @extend .input_text;
+}
+
+input[type="color"] {
+    @extend .input_text;
+}
+
+select {
+    @extend .input_text;
+}
+
+textarea {
+    @extend .input_text;
+    min-height: 150px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label  {
+    display: inline-block;
+}
+
+::-webkit-input-placeholder {
+   color: $primary-color;
+}
+
+:-moz-placeholder {
+   color: primary-color;
+}
+
+::-moz-placeholder {
+   color: primary-color;
+}
+
+:-ms-input-placeholder {
+   color: primary-color;
+}
+
+/* Other */
+hr {
+    position: relative;
+    width: $primary-width;
+    border: solid $border-color;
+    border-width: 1px 0 0;
+    clear: both;
+}
+
+/* Buttons */
+
+@mixin button-border($border-color) {
+  border: 1px solid $border-color;
+}
+
+@mixin button-color($background-color: $white, $color: $primary-color)
+{
+  background-color: $background-color;
+  color: $color;
+}
+
+@mixin button-size($pad1, $pad2, $font)
+{
+  padding: $pad1 $pad2;
+  font-size: : $font;
+}
+
+@mixin button-config() {
+  @include button-color();
+  @include button-border($primary-color);
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 14px 20px;
+  margin: 0 0 20px 0;
+  font-size: 1em;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.button {
+    @include button-config();
+
+    &:hover, &:focus {
+      @include button-color($primary-color, $white);
+    }
+    &.success {
+      @include button-color($white-color, $green-color);
+      border: 1px solid $green-color;
+
+      &:hover, &:focus {
+          @include button-color($green-color, $white-color);
+      }
+    }
+    &.warning {
+      @include button-color($white-color, $yellow-color);
+      border: 1px solid $yellow-color;
+      &:hover, &:focus {
+        @include button-color($yellow-color, $white-color);
+      }
+    }
+    &.danger {
+      @include button-color($white-color, $pink-color);
+      border: 1px solid $pink-color;
+      &:hover, &:focus {
+        @include button-color($pink-color, $white-color);
+      }
+    }
+    &.small {
+      @include button-size(10px, 16px, 0.750em);
+    }
+    &.large {
+      @include button-size(16px, 30px, 1.5em);
+    }
+    &.expanded {
+      display: block;
+      max-width: 100%;
+    }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.font-light {
+  font-weight: lighter;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Unordered list markers */
+.circle-potato {
+  list-style-type: circle;
+}
+
+.square-potato {
+  list-style-type: square;
+}
+
+.roman-potato {
+  list-style-type: upper-roman;
+}
+
+.alpha-potato {
+  list-style-type: lower-alpha;
+}
