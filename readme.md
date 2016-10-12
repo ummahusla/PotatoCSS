@@ -1,5 +1,5 @@
 <p align="center">
-    <img align="center" src="https://avatars2.githubusercontent.com/u/20952276?v=3&s=200" alt="PotatoCSS">
+    <img align="center" src="logo.png" alt="PotatoCSS">
 </p>
 
 > Simple CSS framework for hackers. Simple as potato.
