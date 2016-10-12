@@ -3,35 +3,35 @@
 
 /* Utilities */
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 .text-justify {
-  text-align: justify;
+	text-align: justify;
 }
 
 .float-left {
-  float: left;
+	float: left;
 }
 
 .float-right {
-  float: right;
+	float: right;
 }
 
 .font-light {
-  font-weight: lighter;
+	font-weight: lighter;
 }
 
 .font-normal {
-  font-weight: normal;
+	font-weight: normal;
 }
 
 .font-bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 
@@ -68,21 +68,21 @@
 
 /* Placeholder Mixin */
 .placeholder(@rules){
-   &::-webkit-input-placeholder{
-      @rules();
-   }
+	&::-webkit-input-placeholder{
+    	@rules();
+   	}
 
-   &:-moz-placeholder{
-      @rules();
-   }
+	&:-moz-placeholder{
+    	@rules();
+   	}
 
-   &::-moz-placeholder{
-      @rules();
-   }
+   	&::-moz-placeholder{
+      	@rules();
+   	}
 
-   &:-ms-input-placeholder{
-      @rules();
-   }
+   	&:-ms-input-placeholder{
+    	@rules();
+   	}
 }
 
 /* Media Query */
@@ -126,7 +126,7 @@
 
 /* Global */
 html, body {
-    height: 100%;
+	height: 100%;
     width: 100%;
     font-size: 100%;
     margin: 0;
@@ -188,13 +188,13 @@ h6 {
 
 /* Grid */
 .container {
-    position: relative;
+	position: relative;
     width: 96%;
     max-width: 960px;
     margin: 0 auto;
 
     &:after {
-    	content: "";
+   		content: "";
     	clear: both;
     	display: table;
     }
@@ -268,7 +268,7 @@ h6 {
 	    	}
 	    	@media @tablet {
 	    		&.two-medium {
-	    		width: @grid-width-two;
+	    			width: @grid-width-two;
 		    	}
 		    	&.three-medium {
 		    		width: @grid-width-three;
@@ -303,7 +303,7 @@ h6 {
 	    	}
 	    	@media @desktop {
 	    		&.two-large {
-	    		width: @grid-width-two;
+	    			width: @grid-width-two;
 		    	}
 		    	&.three-large {
 		    		width: @grid-width-three;
@@ -459,18 +459,18 @@ h6 {
 	}
 
 	.circle-potato {
-	  list-style-type: circle;
+		list-style-type: circle;
 	}
 
 	.square-potato {
-	  list-style-type: square;
+		list-style-type: square;
 	}
 
 	.roman-potato {
-	  list-style-type: upper-roman;
+	  	list-style-type: upper-roman;
 	}
 
 	.alpha-potato {
-	  list-style-type: lower-alpha;
+	  	list-style-type: lower-alpha;
 	}
 }
