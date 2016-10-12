@@ -55,6 +55,13 @@ h6 {
 a {
     text-decoration: none;
     border-bottom: 1px dotted #333;
+    -webkit-transition: border-bottom 0.2s ease-out, color 0.2s ease-out;
+    transition: border-bottom 0.2s ease-out, color 0.2s ease-out;
+}
+
+a:hover {
+    color: #919191;
+    border-bottom: 1px dotted #919191;
 }
 
 @media screen and (min-width: 40em) {
@@ -112,6 +119,13 @@ a {
     content: "";
     clear: both;
     display: table;
+}
+
+.potato + .potato.end, .potatoes + .potato.end, .potato + .potatoes.end, .potatoes + .potatoes.end {
+    float: left;
+}
+.potato + .potato:last-child, .potatoes + .potato:last-child, .potato + .potatoes:last-child, .potatoes + .potatoes:last-child {
+    float: right;
 }
 
 /* Small - Mobile */
