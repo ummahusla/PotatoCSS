@@ -14,6 +14,9 @@
 
 Please read [**contributing guide**](contributing.md).
 
+##Issues
+All current issues are listed [**here**](https://github.com/PotatoCSS/PotatoCSS/issues)
+
 ## Credits
 
 [**PotatoCSS**](https://github.com/PotatoCSS/PotatoCSS) was created as a [**hacktoberfest**](https://hacktoberfest.digitalocean.com/) project by [**Edvins Antonovs**](https://twitter.com/edvinsantonovs).
