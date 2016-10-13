@@ -1,0 +1,25 @@
+{
+  "name": "potato-css",
+  "version": "1.0.0",
+  "description": "Simple CSS framework for hackers. Simple as potato. ",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ummahusla/PotatoCSS.git"
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "author": "Edvins Antonovs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ummahusla/PotatoCSS/issues"
+  },
+  "homepage": "https://github.com/ummahusla/PotatoCSS#readme"
+}

@@ -8,6 +8,8 @@
 
 * [**Download**](https://github.com/PotatoCSS/PotatoCSS/archive/master.zip) or `git clone https://github.com/PotatoCSS/PotatoCSS.git`
 
+* `npm install potato-css`
+
 ## Contributing
 
 Please read [**contributing guide**](contributing.md).
