@@ -461,3 +461,17 @@ hr {
 .alpha-potato {
   list-style-type: lower-alpha;
 }
+
+table, td, th {
+    border: 1px solid black;
+     padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
