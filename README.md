@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.png" alt="PotatoCSS" /></p>
+<p align="center"><img src="https://github.com/PotatoCSS/PotatoCSS/logo.png" alt="PotatoCSS" /></p>
 <h3 align="center">PotatoCSS</h3>
 <p align="center"><small><code>Simple CSS framework for hackers. Simple as potato.</code></small></p>
 
@@ -33,13 +33,13 @@ Alternately, you can find examples/snippets for you to insert into your HTML (as
 
 ## Contributing
 
-Please read the repository's [**contributing guide**](contributing.md) for more information on how you can help.
+Please read the repository's [**contributing guide**](https://github.com/PotatoCSS/PotatoCSS/CONTRIBUTING.md) for more information on how you can help.
 
 Thanks for taking interest!
 
 ## License
 
-[**PotatoCSS**](http://potatocss.com/) is licensed under the [**MIT License**](license.md).
+[**PotatoCSS**](http://potatocss.com/) is licensed under the [**MIT License**](https://github.com/PotatoCSS/PotatoCSS/LICENSE.md).
 
 ## Credits
 
