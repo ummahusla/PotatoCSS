@@ -29,7 +29,7 @@ The following details are estimates, assume [evergreen browser](http://stackover
 * **Firefox**           : 3.5+
 * **Safari**            : 3.2+
 * **Opera**             : 11+
-* **Opera Mini**        : UNKNOWN
+* **Opera Mini**        : ALL
 * **Edge**              : ALL
 * **Internet Explorer** : 8+
 
