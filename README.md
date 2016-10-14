@@ -23,13 +23,15 @@ Alternately, you can find examples/snippets for you to insert into your HTML (as
 
 ## Browser Support
 
+The following details are estimates, assume [evergreen browser](http://stackoverflow.com/a/19060334) support for now.
+
 * **Chrome**            : ALL
-* **Firefox**           : ALL
-* **Safari**            : ALL
-* **Opera**             : ALL
+* **Firefox**           : 3.5+
+* **Safari**            : 3.2+
+* **Opera**             : 11+
 * **Opera Mini**        : UNKNOWN
 * **Edge**              : ALL
-* **Internet Explorer** : ALL
+* **Internet Explorer** : 8+
 
 ## Contributing
 
