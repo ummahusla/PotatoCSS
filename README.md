@@ -6,18 +6,20 @@ ___
 
 PotatoCSS is a beautiful CSS framework for hackers: boasting a responsive 12 column grid, ready to use built-in forms and buttons, it's clean, simple and easy-to-use.
 
-## Demo
 
-Demo is available [**here**](http://potatocss.com/)
-
-
-## Installation and Usage
+## Installation
 
 [**PotatoCSS**](http://potatocss.com/) can be installed via the methods below,
 
 * [Download](https://github.com/ummahusla/PotatoCSS/archive/master.zip) 
 * `git clone https://github.com/PotatoCSS/PotatoCSS.git`
 * `npm install potato-css`
+* 
+## How to use
+
+You can see PotatoCSS in action at [**http://potatocss.com**](http://potatocss.com).
+
+Alternately, you can find examples/snippets for you to insert into your HTML (assuming PotatoCSS has been included into your file).
 
 ## Browser Support
 
