@@ -33,6 +33,8 @@ $nine-width: 71%;
 $ten-width: 79.33%;
 $eleven-width: 87.66%;
 
+$container-max-width: 960px;
+
 /* Global styles */
 
 *,
@@ -130,8 +132,8 @@ h6 {
 
 .container {
     width: $primary-width;
+    max-width: $container-max-width;
     position: relative;
-    max-width: 10 * $primary-width;
     margin: 0 auto;
 
     &:after {

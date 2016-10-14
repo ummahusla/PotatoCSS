@@ -102,7 +102,7 @@ h6 {
 .container {
     width: 96%;
     position: relative;
-    max-width: 960%;
+    max-width: 960px;
     margin: 0 auto;
 }
 
