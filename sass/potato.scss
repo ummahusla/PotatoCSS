@@ -1,6 +1,17 @@
+/*\
+|*| Author   : Edvins Antonovs <https://github.com/ummahusla>, Verónica Lona <https://github.com/vmmartinezlona>, Jack Andrew Loudon <https://github.com/blue-eyeswhitedragon>
+|*| Date     : 11th October 2016
+|*| License  : <https://raw.githubusercontent.com/ummahusla/PotatoCSS/master/license.md>
+|*| Language : SASS <http://sass-lang.com>
+\*/
+
+/* Import Google Font "Roboto" */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i);
 
-$sans-serif: 'Roboto', sans-serif;
+/* Variables */
+
+$sans-serif: "Roboto", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
 
 $primary-color: #333;
 $border-color: #ccc;
@@ -22,8 +33,20 @@ $nine-width: 71%;
 $ten-width: 79.33%;
 $eleven-width: 87.66%;
 
-/*Global*/
-html, body {
+$container-max-width: 960px;
+
+/* Global styles */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /* IE 8+ to use box-sizing, < IE 9 support is pretty much void at this point */
+}
+
+html,
+body {
     height: 100%;
     width: 100%;
     font-size: 100%;
@@ -32,14 +55,9 @@ html, body {
 }
 
 /*Typography*/
-@mixin typography($numeral: 0) {
-    margin: 5px 0;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.5;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
-    font-size: (1 + $numeral/8 ) * 1em;
+
+@mixin typography($numeral: 0, $divider: 4) {
+    font-size: (1 + $numeral/$divider ) * 1em;
 }
 
 * {
@@ -49,20 +67,29 @@ html, body {
     color: $primary-color;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: inherit !important;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+}
+
 h1 {
-    @include typography(6);
+    @include typography(3);
 }
 
 h2 {
-    @include typography(4);
-}
-
-h3 {
     @include typography(2);
 }
 
-h4 {
+h3 {
     @include typography(1);
+}
+
+h4 {
+    @include typography(.5);
 }
 
 h5 {
@@ -75,23 +102,23 @@ h6 {
 
 @media screen and (min-width: 40em) {
     h1 {
-        @include typography(7);
+        @include typography(3.5);
     }
 
     h2 {
-        @include typography(5);
+        @include typography(2.5);
     }
 
     h3 {
-        @include typography(3);
+        @include typography(1.5);
     }
 
     h4 {
-        @include typography(2);
+        @include typography(1);
     }
 
     h5 {
-        @include typography(1);
+        @include typography(.5);
     }
 
     h6 {
@@ -100,10 +127,11 @@ h6 {
 }
 
 /* Grid */
+
 .container {
     width: $primary-width;
+    max-width: $container-max-width;
     position: relative;
-    max-width: 10 * $primary-width;
     margin: 0 auto;
 
     &:after {
@@ -117,8 +145,8 @@ h6 {
     position: relative;
     width: $primary-width;
 
-    .potato, .potatoes {
-        float: left;
+    .potato,
+    .potatoes {
         margin: 8px 2%;
         min-height: 2px;
     }
@@ -130,9 +158,10 @@ h6 {
     }
 }
 
-.potato, .potatoes {
+.potato,
+.potatoes {
     width: $primary-width;
-    float: left;
+    float: left !important;
 }
 
 
@@ -140,7 +169,8 @@ h6 {
     width: $width;
 }
 
-/* Small - Mobile */
+/* Mobile (Small) */
+
 .one-small {
     &.potato, &.potatoes {
         width: $one-width;
@@ -191,10 +221,12 @@ h6 {
     width: $primary-width;
 }
 
-/* Medium - Tablet */
+/* Tablet (Medium) */
+
 @media screen and (min-width: 40em) {
     .one-medium {
-        &.potato, &.potatoes {
+        &.potato,
+        &.potatoes {
               width: $one-width;
         }
     }
@@ -245,10 +277,12 @@ h6 {
 
 }
 
-/* large - Desktop */
+/* Desktop (Large) */
+
 @media screen and (min-width: 64em) {
     .one-large {
-        &.potato, &.potatoes {
+        &.potato,
+        &.potatoes {
         width: $one-width;
         }
     }
@@ -298,6 +332,8 @@ h6 {
     }
 }
 
+/* Form */
+
 .input_text {
     background-color: $white-color;
     border: 1px solid $primary-color;
@@ -310,9 +346,6 @@ h6 {
     margin: 0 0 20px 0;
     padding: 0 10px;
     width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 input[type="text"] {
@@ -391,6 +424,7 @@ input[type="radio"] + label, input[type="checkbox"] + label  {
 }
 
 /* Other */
+
 hr {
     position: relative;
     width: $primary-width;
@@ -485,6 +519,7 @@ hr {
 }
 
 /* Utilities */
+
 .text-center {
     text-align: center;
 }
@@ -522,6 +557,7 @@ hr {
 }
 
 /* Unordered list markers */
+
 .circle-potato {
     list-style-type: circle;
 }
