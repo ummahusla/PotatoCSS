@@ -77,54 +77,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    @include typography(6);
+    @include typography(3);
 }
 
 h2 {
-    @include typography(4);
-}
-
-h3 {
     @include typography(2);
 }
 
-h4 {
+h3 {
     @include typography(1);
 }
 
+h4 {
+    @include typography(.5);
+}
+
 h5 {
-    @include typography(-1);
+    @include typography();
 }
 
 h6 {
-    @include typography(-2);
+    @include typography();
 }
 
 @media screen and (min-width: 40em) {
-    $divider: 8;
-    
     h1 {
-        @include typography(7, $divider);
+        @include typography(3.5);
     }
 
     h2 {
-        @include typography(5, $divider);
+        @include typography(2.5);
     }
 
     h3 {
-        @include typography(3, $divider);
+        @include typography(1.5);
     }
 
     h4 {
-        @include typography(2, $divider);
+        @include typography(1);
     }
 
     h5 {
-        @include typography(1, $divider);
+        @include typography(.5);
     }
 
     h6 {
-        @include typography(-1, $divider);
+        @include typography();
     }
 }
 

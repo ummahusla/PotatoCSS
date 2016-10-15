@@ -77,54 +77,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    .mixin-typography(6);
+    .mixin-typography(3);
 }
 
 h2 {
-    .mixin-typography(4);
-}
-
-h3 {
     .mixin-typography(2);
 }
 
-h4 {
+h3 {
     .mixin-typography(1);
 }
 
+h4 {
+    .mixin-typography(.5);
+}
+
 h5 {
-    .mixin-typography(-1);
+    .mixin-typography();
 }
 
 h6 {
-    .mixin-typography(-2);
+    .mixin-typography();
 }
 
 @media screen and (min-width: 40em) {
-    @divider: 8;
-    
     h1 {
-        .mixin-typography(7, @divider);
+        .mixin-typography(3.5);
     }
 
     h2 {
-        .mixin-typography(5, @divider);
+        .mixin-typography(2.5);
     }
 
     h3 {
-        .mixin-typography(3, @divider);
+        .mixin-typography(1.5);
     }
 
     h4 {
-        .mixin-typography(2, @divider);
+        .mixin-typography(1);
     }
 
     h5 {
-        .mixin-typography(1, @divider);
+        .mixin-typography(.5);
     }
 
     h6 {
-        .mixin-typography(-1, @divider);
+        .mixin-typography();
     }
 }
 
