@@ -20,7 +20,8 @@ var gulp = require("gulp"),
     
 var paths = {
     src : "src/",
-    build : "dist/"
+    build : "dist/",
+    dev : "test/"
 };
 
 var plumberErrorHandler = function( err ) { console.log("Plumber caught:\n" + err); this.emit("end"); },
