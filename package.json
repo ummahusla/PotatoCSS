@@ -1,13 +1,13 @@
 {
   "name": "potato-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CSS framework for hackers. Simple as potato. ",
   "main": "index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install" : "gulpfile.js"
   },
   "repository": {
     "type": "git",
