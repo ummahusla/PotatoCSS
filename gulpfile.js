@@ -13,7 +13,8 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     minimiser = require("gulp-clean-css"),
     plumber = require("gulp-plumber"),
-    clean = require("gulp-clean"),
+    del = require("del"),
+    vinylPaths = require("vinyl-paths"),
     rename = require("gulp-rename"),
     beautify = require("gulp-cssbeautify");
     
@@ -58,7 +59,7 @@ gulp.task("__build-task-clean", function () {
     console.log("Cleaning build folder \"" + paths.build + "\"");
     return gulp
         .src( paths.build, { read : false } )
-        .pipe( clean() );
+        .pipe( vinylPaths( del ) );
 });
 
 /* Build and Watch Tasks */
