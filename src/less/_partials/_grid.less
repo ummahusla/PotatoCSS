@@ -1,0 +1,205 @@
+//* Grid *//
+
+.container {
+    width: @primary-width;
+    max-width: @container-max-width;
+    position: relative;
+    margin: 0 auto;
+
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.row {
+    position: relative;
+    width: @primary-width;
+
+    .potato,
+    .potatoes {
+        margin: 8px 2%;
+        min-height: 2px;
+    }
+
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.potato,
+.potatoes {
+    width: @primary-width;
+    float: left !important;
+}
+
+
+.mixin-width-potatoes(@width){
+    width: @width;
+}
+
+/* Mobile (Small) */
+
+.one-small {
+    &.potato, &.potatoes {
+        width: @one-width;
+    }
+}
+
+.two-small.potatoes {
+    width: @two-width;
+}
+
+.three-small.potatoes {
+    width: @three-width;
+}
+
+.four-small.potatoes {
+    width: @four-width;
+}
+
+.five-small.potatoes {
+    width: @five-width;
+}
+
+.six-small.potatoes {
+    width: @six-width;
+}
+
+.seven-small.potatoes {
+    width: @seven-width;
+}
+
+.eight-small.potatoes {
+    width: @eight-width;
+}
+
+.nine-small.potatoes {
+    width: @nine-width;
+}
+
+.ten-small.potatoes {
+    width: @ten-width;
+}
+
+.eleven-small.potatoes {
+    width: @eleven-width;
+}
+
+.twelve-small.potatoes {
+    width: @primary-width;
+}
+
+/* Tablet (Medium) */
+
+@media screen and (min-width: 40em) {
+    .one-medium {
+        &.potato,
+        &.potatoes {
+            width: @one-width;
+        }
+    }
+
+    .two-medium.potatoes {
+        width: @two-width;
+    }
+
+    .three-medium.potatoes {
+        width: @three-width;
+    }
+
+    .four-medium.potatoes {
+        width: @four-width;
+    }
+
+    .five-medium.potatoes {
+        width: @five-width;
+    }
+
+    .six-medium.potatoes {
+        width: @six-width;
+    }
+
+    .seven-medium.potatoes {
+        width: @seven-width;
+    }
+
+    .eight-medium.potatoes {
+        width: @eight-width;
+    }
+
+    .nine-medium.potatoes {
+        width: @nine-width;
+    }
+
+    .ten-medium.potatoes {
+        width: @ten-width;
+    }
+
+    .eleven-medium.potatoes {
+        width: @eleven-width;
+    }
+
+    .twelve-medium.potatoes {
+        width: @primary-width;
+    }
+
+}
+
+/* Desktop (Large) */
+
+@media screen and (min-width: 64em) {
+    .one-large {
+        &.potato,
+        &.potatoes {
+            width: @one-width;
+        }
+    }
+
+    .two-large.potatoes {
+        width: @two-width;
+    }
+
+    .three-large.potatoes {
+        width: @three-width;
+    }
+
+    .four-large.potatoes {
+        width: @four-width;
+    }
+
+    .five-large.potatoes {
+        width: @five-width;
+    }
+
+    .six-large.potatoes {
+        width: @six-width;
+    }
+
+    .seven-large.potatoes {
+        width: @seven-width;
+    }
+
+    .eight-large.potatoes {
+        width: @eight-width;
+    }
+
+    .nine-large.potatoes {
+        width: @nine-width;
+    }
+
+    .ten-large.potatoes {
+        width: @ten-width;
+    }
+
+    .eleven-large.potatoes {
+        width: @eleven-width;
+    }
+
+    .twelve-large.potatoes {
+        width: @primary-width;
+    }
+}
