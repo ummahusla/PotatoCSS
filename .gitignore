@@ -17,3 +17,6 @@
 .c9/
 /.c9
 /.c9/
+
+# Node
+node_modules/
