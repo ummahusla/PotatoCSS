@@ -12,7 +12,7 @@ PotatoCSS is a beautiful CSS framework for hackers: boasting a responsive 12 col
 [**PotatoCSS**](http://potatocss.com/) can be installed via the methods below,
 
 * [Download](https://github.com/ummahusla/PotatoCSS/archive/master.zip) 
-* `git clone https://github.com/PotatoCSS/PotatoCSS.git`
+* `git clone https://github.com/ummahusla/PotatoCSS.git`
 * `npm install potato-css`
 
 ## How to use
