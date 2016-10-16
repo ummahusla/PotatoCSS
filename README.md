@@ -35,7 +35,7 @@ The following details are estimates, assume [evergreen browser](http://stackover
 * **Opera**             : 11+
 * **Opera Mini**        : ALL
 * **Edge**              : ALL
-* **Internet Explorer** : 8+
+* **Internet Explorer** : 9+
 
 ## Contributing
 
