@@ -82,7 +82,7 @@ gulp.task("__watch-less", function () {
 /* Default and Help */
 
 gulp.task("__help", function () {
-    console.log("o===========o\no PotatoCSS o\no===========o\n\nCommands\n========\n\"gulp __help\" - brings you back to this screen.\n\"gulp __build\" - builds files from source.\n\"gulp __build-sass\" - executes \"gulp __build\" only for source SASS files.\n\"gulp __build-less\" - executes \"gulp __build\" only for source LESS files.\n\"gulp __watch\" - watches source files for change and builds them if they do.\n\"gulp __watch-sass\" - executes \"gulp __watch\" only for source SASS files.\n\"gulp __watch-less\" - executes \"gulp __watch\" only for source LESS files.");
+    console.log("o===========o\no PotatoCSS o\no===========o\n\nCommands\n========\n\"gulp __help\" - brings you back to this screen.\n\n\"gulp __build\" - builds files from source.\n\"gulp __build-sass\" - executes \"gulp __build\" only for source SASS files.\n\"gulp __build-less\" - executes \"gulp __build\" only for source LESS files.\n\n\"gulp __watch\" - watches source files for change and builds them if they do.\n\"gulp __watch-sass\" - executes \"gulp __watch\" only for source SASS files.\n\"gulp __watch-less\" - executes \"gulp __watch\" only for source LESS files.");
 });
 
 gulp.task("default", function () {
