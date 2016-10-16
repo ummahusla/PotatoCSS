@@ -1,39 +1,42 @@
-/*\
-|*| Author   : Edvins Antonovs <https://github.com/ummahusla>, Jack Andrew Loudon <https://github.com/blue-eyeswhitedragon>, Verónica Lona <https://github.com/vmmartinezlona>
-|*| Date     : 14th October 2016
+/*| PotatoCSS
+|*| Author   : Edvins Antonovs <https://github.com/ummahusla>, Verónica Lona <https://github.com/vmmartinezlona>, Jack Andrew Loudon <https://github.com/blue-eyeswhitedragon>
+|*| Date     : 11th October 2016
 |*| License  : <https://raw.githubusercontent.com/ummahusla/PotatoCSS/master/license.md>
-|*| Language : LESS <http://lesscss.org>
 \*/
+
+// Set charset
+
+@charset "UTF-8";
 
 /* Import Google Font "Roboto" */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i);
 
-/* Variables */
+//* Variables *//
 
-@sans-serif: "Roboto", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
+$sans-serif: "Roboto", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
 
-@primary-color: #333;
-@border-color: #ccc;
-@white-color: #fff;
-@success-color: #27ae60;
-@warning-color: #f39c12;
-@danger-color: #e74c3c;
+$primary-color: #333;
+$border-color: #ccc;
+$white-color: #fff;
+$success-color: #27ae60;
+$warning-color: #f39c12;
+$danger-color: #e74c3c;
 
-@primary-width: 96%;
-@one-width: 4.33%;
-@two-width: 12.66%;
-@three-width: 21%;
-@four-width: 29.33%;
-@five-width: 37.66%;
-@six-width: 46%;
-@seven-width: 54.33%;
-@eight-width: 62.66%;
-@nine-width: 71%;
-@ten-width: 79.33%;
-@eleven-width: 87.66%;
+$primary-width: 96%;
+$one-width: 4.33%;
+$two-width: 12.66%;
+$three-width: 21%;
+$four-width: 29.33%;
+$five-width: 37.66%;
+$six-width: 46%;
+$seven-width: 54.33%;
+$eight-width: 62.66%;
+$nine-width: 71%;
+$ten-width: 79.33%;
+$eleven-width: 87.66%;
 
-@container-max-width: 960px;
+$container-max-width: 960px;
 
 /* Global styles */
 
@@ -56,15 +59,15 @@ body {
 
 /*Typography*/
 
-.mixin-typography(@numeral: 0, @divider: 4) {
-    font-size: (1 + @numeral/@divider ) * 1em;
+@mixin typography($numeral: 0, $divider: 4) {
+    font-size: (1 + $numeral/$divider ) * 1em;
 }
 
 * {
-    font-family: @sans-serif;
+    font-family: $sans-serif;
     font-weight: lighter;
     line-height: 1.5;
-    color: @primary-color;
+    color: $primary-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,60 +80,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    .mixin-typography(3);
+    @include typography(3);
 }
 
 h2 {
-    .mixin-typography(2);
+    @include typography(2);
 }
 
 h3 {
-    .mixin-typography(1);
+    @include typography(1);
 }
 
 h4 {
-    .mixin-typography(.5);
+    @include typography(.5);
 }
 
 h5 {
-    .mixin-typography();
+    @include typography();
 }
 
 h6 {
-    .mixin-typography();
+    @include typography();
 }
 
 @media screen and (min-width: 40em) {
     h1 {
-        .mixin-typography(3.5);
+        @include typography(3.5);
     }
 
     h2 {
-        .mixin-typography(2.5);
+        @include typography(2.5);
     }
 
     h3 {
-        .mixin-typography(1.5);
+        @include typography(1.5);
     }
 
     h4 {
-        .mixin-typography(1);
+        @include typography(1);
     }
 
     h5 {
-        .mixin-typography(.5);
+        @include typography(.5);
     }
 
     h6 {
-        .mixin-typography();
+        @include typography();
     }
 }
 
 /* Grid */
 
 .container {
-    width: @primary-width;
-    max-width: @container-max-width;
+    width: $primary-width;
+    max-width: $container-max-width;
     position: relative;
     margin: 0 auto;
 
@@ -143,7 +146,7 @@ h6 {
 
 .row {
     position: relative;
-    width: @primary-width;
+    width: $primary-width;
 
     .potato,
     .potatoes {
@@ -160,65 +163,65 @@ h6 {
 
 .potato,
 .potatoes {
-    width: @primary-width;
+    width: $primary-width;
     float: left !important;
 }
 
 
-.mixin-width-potatoes(@width){
-    width: @width;
+@mixin width-potatoes($width){
+    width: $width;
 }
 
 /* Mobile (Small) */
 
 .one-small {
     &.potato, &.potatoes {
-        width: @one-width;
+        width: $one-width;
     }
 }
 
 .two-small.potatoes {
-    width: @two-width;
+    width: $two-width;
 }
 
 .three-small.potatoes {
-    width: @three-width;
+    width: $three-width;
 }
 
 .four-small.potatoes {
-    width: @four-width;
+    width: $four-width;
 }
 
 .five-small.potatoes {
-    width: @five-width;
+    width: $five-width;
 }
 
 .six-small.potatoes {
-    width: @six-width;
+    width: $six-width;
 }
 
 .seven-small.potatoes {
-    width: @seven-width;
+    width: $seven-width;
 }
 
 .eight-small.potatoes {
-    width: @eight-width;
+    width: $eight-width;
 }
 
 .nine-small.potatoes {
-    width: @nine-width;
+    width: $nine-width;
 }
 
 .ten-small.potatoes {
-    width: @ten-width;
+    width: $ten-width;
 }
 
 .eleven-small.potatoes {
-    width: @eleven-width;
+    width: $eleven-width;
 }
 
 .twelve-small.potatoes {
-    width: @primary-width;
+    width: $primary-width;
 }
 
 /* Tablet (Medium) */
@@ -227,52 +230,52 @@ h6 {
     .one-medium {
         &.potato,
         &.potatoes {
-            width: @one-width;
+              width: $one-width;
         }
     }
 
     .two-medium.potatoes {
-        width: @two-width;
+        width: $two-width;
     }
 
     .three-medium.potatoes {
-        width: @three-width;
+        width: $three-width;
     }
 
     .four-medium.potatoes {
-        width: @four-width;
+        width: $four-width;
     }
 
     .five-medium.potatoes {
-        width: @five-width;
+        width: $five-width;
     }
 
     .six-medium.potatoes {
-        width: @six-width;
+        width: $six-width;
     }
 
     .seven-medium.potatoes {
-        width: @seven-width;
+        width: $seven-width;
     }
 
     .eight-medium.potatoes {
-        width: @eight-width;
+        width: $eight-width;
     }
 
     .nine-medium.potatoes {
-        width: @nine-width;
+        width: $nine-width;
     }
 
     .ten-medium.potatoes {
-        width: @ten-width;
+        width: $ten-width;
     }
 
     .eleven-medium.potatoes {
-        width: @eleven-width;
+        width: $eleven-width;
     }
 
     .twelve-medium.potatoes {
-        width: @primary-width;
+        width: $primary-width;
     }
 
 }
@@ -283,61 +286,61 @@ h6 {
     .one-large {
         &.potato,
         &.potatoes {
-            width: @one-width;
+        width: $one-width;
         }
     }
 
     .two-large.potatoes {
-        width: @two-width;
+        width: $two-width;
     }
 
     .three-large.potatoes {
-        width: @three-width;
+        width: $three-width;
     }
 
     .four-large.potatoes {
-        width: @four-width;
+        width: $four-width;
     }
 
     .five-large.potatoes {
-        width: @five-width;
+        width: $five-width;
     }
 
     .six-large.potatoes {
-        width: @six-width;
+        width: $six-width;
     }
 
     .seven-large.potatoes {
-        width: @seven-width;
+        width: $seven-width;
     }
 
     .eight-large.potatoes {
-        width: @eight-width;
+        width: $eight-width;
     }
 
     .nine-large.potatoes {
-        width: @nine-width;
+        width: $nine-width;
     }
 
     .ten-large.potatoes {
-        width: @ten-width;
+        width: $ten-width;
     }
 
     .eleven-large.potatoes {
-        width: @eleven-width;
+        width: $eleven-width;
     }
 
     .twelve-large.potatoes {
-        width: @primary-width;
+        width: $primary-width;
     }
 }
 
 /* Form */
 
 .input_text {
-    background-color: @white-color;
-    border: 1px solid @primary-color;
-    color: @primary-color;
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    color: $primary-color;
     border-radius: 4px;
     display: block;
     font-size: 1em;
@@ -349,51 +352,51 @@ h6 {
 }
 
 input[type="text"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="password"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="date"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="datetime"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="email"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="number"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="tel"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="time"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="url"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 input[type="color"] {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 select {
-    &:extend(.input_text);
+    @extend .input_text;
 }
 
 textarea {
-    &:extend(.input_text);
+    @extend .input_text;
     min-height: 150px;
     padding: 10px;
     line-height: 1.5;
@@ -408,53 +411,53 @@ input[type="radio"] + label, input[type="checkbox"] + label  {
 }
 
 ::-webkit-input-placeholder {
-   color: @primary-color;
+   color: $primary-color;
 }
 
 :-moz-placeholder {
-   color: @primary-color;
+   color: $primary-color;
 }
 
 ::-moz-placeholder {
-   color: @primary-color;
+   color: $primary-color;
 }
 
 :-ms-input-placeholder {
-   color: @primary-color;
+   color: $primary-color;
 }
 
 /* Other */
 
 hr {
     position: relative;
-    width: @primary-width;
-    border: solid @border-color;
+    width: $primary-width;
+    border: solid $border-color;
     border-width: 1px 0 0;
     clear: both;
 }
 
 /* Buttons */
 
-.mixin-button-border(@border-color: @primary-color) {
-    border: 1px solid @border-color;
+@mixin button-border($border-color: $primary-color) {
+    border: 1px solid $border-color;
 }
 
-.mixin-button-color(@background-color: @white-color, @color: @primary-color)
+@mixin button-color($background-color: $white-color, $color: $primary-color)
 {
-    background-color: @background-color;
-    color: @color;
+    background-color: $background-color;
+    color: $color;
 }
 
-.mixin-button-size(@pad1, @pad2, @font)
+@mixin button-size($pad1, $pad2, $font)
 {
-    padding: @pad1 @pad2;
-    font-size: @font;
+    padding: $pad1 $pad2;
+    font-size: $font;
 }
 
-.mixin-button-config {
-    .mixin-button-color();
-    .mixin-button-border(@primary-color);
-    .mixin-button-size(14px, 20px, 1em);
+@mixin button-config() {
+    @include button-color();
+    @include button-border($primary-color);
+    @include button-size(14px, 20px, 1em);
     display: inline-block;
     text-align: center;
     line-height: 1;
@@ -471,48 +474,45 @@ hr {
 }
 
 .button {
-    .mixin-button-config();
+    @include button-config();
 
     &:hover, &:focus {
-        .mixin-button-color(@primary-color, @white-color);
+        @include button-color($primary-color, $white-color);
     }
 
     &.success {
-        .mixin-button-color(@white-color, @success-color);
-        
-        border: 1px solid @success-color;
+        @include button-color($white-color, $success-color);
+        border: 1px solid $success-color;
 
         &:hover, &:focus {
-            .mixin-button-color(@success-color, @white-color);
+            @include button-color($success-color, $white-color);
         }
     }
 
     &.warning {
-        .mixin-button-color(@white-color, @warning-color);
-        
-        border: 1px solid @warning-color;
+        @include button-color($white-color, $warning-color);
+        border: 1px solid $warning-color;
 
         &:hover, &:focus {
-            .mixin-button-color(@warning-color, @white-color);
+            @include button-color($warning-color, $white-color);
         }
     }
 
     &.danger {
-        .mixin-button-color(@white-color, @danger-color);
-        
-        border: 1px solid @danger-color;
+        @include button-color($white-color, $danger-color);
+        border: 1px solid $danger-color;
 
         &:hover, &:focus {
-            .mixin-button-color(@danger-color, @white-color);
+            @include button-color($danger-color, $white-color);
         }
     }
 
     &.small {
-        .mixin-button-size(10px, 16px, 0.750em);
+        @include button-size(10px, 16px, 0.750em);
     }
 
     &.large {
-        .mixin-button-size(16px, 30px, 1.5em);
+        @include button-size(16px, 30px, 1.5em);
     }
 
     &.expanded {
