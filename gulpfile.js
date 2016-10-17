@@ -6,7 +6,7 @@
 |*| Language           : Javascript
 \*/
 
-var isDevelopment = true;
+var isDevelopment = false;
 
 var gulp = require("gulp"),
     sass = require("gulp-sass"),

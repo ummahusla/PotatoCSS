@@ -1,6 +1,6 @@
 {
   "name": "potato-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple CSS framework for hackers. Simple as potato. ",
   "main": "index.js",
   "directories": {

@@ -35,3 +35,28 @@
 .font-bold {
     font-weight: bold;
 }
+
+.allow-overflow {
+    overflow: auto;
+    
+    &-x {
+        overflow-y: auto;
+    }
+    
+    &-y {
+        overflow-y: auto;
+    }
+}
+
+.hide-overflow,
+.forbid-overflow {
+    overflow: hidden;
+    
+    &-x {
+        overflow-y: hidden;
+    }
+    
+    &-y {
+        overflow-y: hidden;
+    }
+}
