@@ -62,7 +62,7 @@ gulp.task("__build-task-less", function () {
 
 gulp.task("__build-task-clean", function () {
     var path = paths.build;
-    if (isDevelopment) paths += "css/";
+    if (isDevelopment) paths.build += "css/";
     console.log("Cleaning build folder \"" + path + "\"");
     return gulp
         .src( paths.dev+"css/", { read : false } )
