@@ -13,13 +13,15 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     minimiser = require("gulp-clean-css"),
     plumber = require("gulp-plumber"),
-    clean = require("gulp-clean"),
+    del = require("del"),
+    vinylPaths = require("vinyl-paths"),
     rename = require("gulp-rename"),
     beautify = require("gulp-cssbeautify");
     
 var paths = {
     src : "src/",
-    build : "dist/"
+    build : "dist/",
+    dev : "test/"
 };
 
 var plumberErrorHandler = function( err ) { console.log("Plumber caught:\n" + err); this.emit("end"); },
@@ -28,10 +30,10 @@ var plumberErrorHandler = function( err ) { console.log("Plumber caught:\n" + er
         .pipe( autoprefixer( { browsers : "last 2 versions" } ) )
         .pipe ( beautify() )
         .pipe( sourcemaps.write() )
-        .pipe( gulp.dest(paths.build + "/css") )
+        .pipe( gulp.dest(paths.build + "css/") )
         .pipe( rename( { extname : ".min.css" } ) )
         .pipe( minimiser() )
-        .pipe( gulp.dest(paths.build + "/css") );
+        .pipe( gulp.dest(paths.build + "css/") );
     };
 
 gulp.task("__build-task-sass", function () {
@@ -58,7 +60,7 @@ gulp.task("__build-task-clean", function () {
     console.log("Cleaning build folder \"" + paths.build + "\"");
     return gulp
         .src( paths.build, { read : false } )
-        .pipe( clean() );
+        .pipe( vinylPaths( del ) );
 });
 
 /* Build and Watch Tasks */

@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "scripts": {
-    "install" : "gulpfile.js"
+    "install": "gulpfile.js"
   },
   "repository": {
     "type": "git",
@@ -23,15 +23,16 @@
   },
   "homepage": "https://github.com/ummahusla/PotatoCSS#readme",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.13",
     "gulp-cssbeautify": "^0.1.3",
     "gulp-less": "^3.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^2.1.1"
+    "gulp-sourcemaps": "^2.1.1",
+    "vinyl-paths": "^2.1.0"
   }
 }

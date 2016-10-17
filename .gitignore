@@ -20,3 +20,6 @@
 
 # Node
 node_modules/
+
+# Test folders
+test/
