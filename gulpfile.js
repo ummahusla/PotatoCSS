@@ -30,10 +30,10 @@ var plumberErrorHandler = function( err ) { console.log("Plumber caught:\n" + er
         .pipe( autoprefixer( { browsers : "last 2 versions" } ) )
         .pipe ( beautify() )
         .pipe( sourcemaps.write() )
-        .pipe( gulp.dest(paths.build + "/css") )
+        .pipe( gulp.dest(paths.build + "css/") )
         .pipe( rename( { extname : ".min.css" } ) )
         .pipe( minimiser() )
-        .pipe( gulp.dest(paths.build + "/css") );
+        .pipe( gulp.dest(paths.build + "css/") );
     };
 
 gulp.task("__build-task-sass", function () {
