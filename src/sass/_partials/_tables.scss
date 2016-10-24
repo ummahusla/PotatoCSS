@@ -1,0 +1,96 @@
+@media only screen and (min-width: 64em) {
+    .potato:not(.twelve-large) table,
+    .potato:not(.twelve-large) .table,
+    .potatoes:not(.twelve-large) table,
+    .potatoes:not(.twelve-large) .table {
+        min-width: 100%;
+    }
+}
+
+table,
+.table {
+    position: relative;
+    display: table;
+    min-width: $primary-width;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid $border-color;
+    border-collapse: collapse;
+    > tbody,
+    > .table-body {
+        min-width: 100%;
+    }
+    
+    &.centered {
+        margin: 0 auto;
+    }
+    
+    &.stretch {
+        min-width: $primary-width;
+    }
+    
+    @media only screen and (min-width: 64em) {
+        min-width: $primary-width / 2;
+        margin: 0 4px;
+    }
+}
+
+tbody,
+.table > .table-body {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr, .table-row,
+th,
+td, .table-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr,
+.table-row {
+    display: table-row;
+    height: 46px;
+    border: 1px solid $border-color;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: content-box;
+    &:first-child {
+        background-color: lighten($border-color, 12.5%);
+        border-top: 0;
+    }
+    
+    &:last-child {
+        border-bottom: 0;
+    }
+    
+}
+
+th,
+td, .table-cell {
+    display: table-cell;
+    height: inherit;
+    min-width: 76px;
+    border: 1px solid $border-color;
+    border-top: 0;
+    border-bottom: 0;
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: $border-color;
+    }
+    
+    &:first-child {
+        border-left: 0;
+    }
+    
+    &:last-child {
+        border-right: 0;
+    }
+}
+
+th,
+.table-row:first-child .table-cell {
+    font-weight: bold;
+}

@@ -7,6 +7,16 @@
         .mixin-button-color(@primary-color, @white-color);
     }
 
+    &.info {
+        .mixin-button-color(@white-color, @info-color);
+        
+        border: 1px solid @info-color;
+
+        &:hover, &:focus {
+            .mixin-button-color(@info-color, @white-color);
+        }
+    }
+    
     &.success {
         .mixin-button-color(@white-color, @success-color);
         
