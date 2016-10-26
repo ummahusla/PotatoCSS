@@ -2,6 +2,8 @@
 <h3 align="center">PotatoCSS</h3>
 <p align="center"><small><code>Simple CSS framework for hackers. Simple as potato.</code></small></p>
 
+[![npm version](https://badge.fury.io/js/potato-css.svg)](https://badge.fury.io/js/potato-css)
+
 ___
 
 PotatoCSS is a beautiful CSS framework for hackers: boasting a responsive 12 column grid, ready to use built-in forms and buttons, it's clean, simple and easy-to-use.
