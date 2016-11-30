@@ -1,0 +1,20 @@
+/*! PotatoCSS (c) Edvins Antonovs 2016 <https://github.com/ummahusla> under the MIT license <https://raw.githubusercontent.com/ummahusla/PotatoCSS/master/LICENSE.md> */
+
+//* Set charset *//
+
+@charset "UTF-8"; // for some reason this fails (?)
+
+//* Import Variables *//
+
+@import "_partials/_variables";
+@import "_partials/_mixins";
+@import "_partials/_imports";
+@import "_partials/_init";
+@import "_partials/_typography";
+@import "_partials/_grid";
+@import "_partials/_sectioning";
+@import "_partials/_buttons";
+@import "_partials/_tables";
+@import "_partials/_forms";
+@import "_partials/_lists";
+@import "_partials/_util";
