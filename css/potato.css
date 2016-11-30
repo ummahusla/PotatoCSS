@@ -1,16 +1,13 @@
-/*\
-|*| Author   : Edvins Antonovs 
-|*| Date     : 11th October 2016
-|*| License  : <https://raw.githubusercontent.com/ummahusla/PotatoCSS/master/license.md>
-|*| Language : CSS
-\*/
+/*
+* Author: Edvins Antonovs
+* License: MIT License
+* Website: http://potatocss.com/ and http://potatocss.com/
+*/
 
 /* Import Google Font "Roboto" */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i);
 
 /* Global styles */
-
 *,
 *:before,
 *:after {
@@ -71,7 +68,7 @@ h6 {
     font-size: 1em;
 }
 
-@media screen and (min-width: 40em) { 
+@media screen and (min-width: 40em) {
     h1 {
         font-size: 1.875em;
     }
@@ -117,11 +114,11 @@ h6 {
     width: 96%;
 }
 
-    .row .potato,
-    .row .potatoes {
-        margin: 8px 2%;
-        min-height: 2px;
-    }
+.row .potato,
+.row .potatoes {
+    margin: 8px 2%;
+    min-height: 2px;
+}
 
 .row:after {
     content: "";
@@ -136,7 +133,6 @@ h6 {
 }
 
 /* Mobile (Small) */
-
 .one-small.potato,
 .one-small.potatoes { width: 4.33%; }
 
@@ -163,8 +159,7 @@ h6 {
 .twelve-small.potatoes { width: 96%; }
 
 /* Tablet (Medium) */
-
-@media screen and (min-width: 40em) { 
+@media screen and (min-width: 40em) {
     .one-medium.potato,
     .one-medium.potatoes { width: 4.33%; }
 
@@ -192,8 +187,7 @@ h6 {
 }
 
 /* Desktop (Large) */
-
-@media screen and (min-width: 64em) { 
+@media screen and (min-width: 64em) {
     .one-large.potato,
     .one-large.potatoes { width: 4.33%; }
 
@@ -221,7 +215,6 @@ h6 {
 }
 
 /* Form */
-
 .input_text,
 input[type="text"],
 input[type="password"],
@@ -235,6 +228,7 @@ input[type="url"],
 input[type="color"],
 select,
 textarea {
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
     background-color: #fff;
     border: 1px solid #333;
     color: #333;
