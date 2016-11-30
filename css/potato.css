@@ -243,6 +243,7 @@ textarea {
 }
 
 textarea {
+    font-size: 1em;
     min-height: 150px;
     padding: 10px;
     line-height: 1.5;
