@@ -1,7 +1,7 @@
 /*
 * Author: Edvins Antonovs
 * License: MIT License
-* Website: http://potatocss.com/ and http://potatocss.com/
+* Website: http://potatocss.com/
 */
 
 /* Import Google Font "Roboto" */
@@ -45,52 +45,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: 28px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 18px;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 15px;
 }
 
 h4 {
-    font-size: 1.125em;
+    font-size: 14px;
 }
 
 h5 {
-    font-size: 1em;
+    font-size: 16px;
 }
 
 h6 {
-    font-size: 1em;
+    font-size: 16px;
 }
 
 @media screen and (min-width: 40em) {
     h1 {
-        font-size: 1.875em;
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 1.625em;
+        font-size: 26px;
     }
 
     h3 {
-        font-size: 1.375em;
+        font-size: 22px;
     }
 
     h4 {
-        font-size: 1.25em;
+        font-size: 15px;
     }
 
     h5 {
-        font-size: 1.125em;
+        font-size: 14px;
     }
 
     h6 {
-        font-size: 1em;
+        font-size: 16px;
     }
 }
 
@@ -234,7 +234,7 @@ textarea {
     color: #333;
     border-radius: 4px;
     display: block;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1;
     height: 46px;
     margin: 0 0 20px 0;
@@ -243,7 +243,7 @@ textarea {
 }
 
 textarea {
-    font-size: 1em;
+    font-size: 16px;
     min-height: 150px;
     padding: 10px;
     line-height: 1.5;
@@ -272,14 +272,28 @@ hr {
     clear: both;
 }
 
+a {
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    color: #333;
+    border-bottom: 1px dotted #333;
+}
+
+a:hover,
+a:focus {
+    color: #8c8a8a;
+    border-bottom: 1px dotted #8c8a8a;
+}
+
 /* Buttons */
 
 .button {
     background-color: #fff;
     color: #333;
     border: 1px solid #333;
-    padding: 14px 20px;
-    font-size: 1em;
+    padding: 12px 18px;
+    font-size: 14px;
     display: inline-block;
     text-align: center;
     line-height: 1;
@@ -339,17 +353,28 @@ hr {
 
 .button.small {
     padding: 10px 16px;
-    font-size: 0.75em;
+    font-size: 12px;
 }
 
 .button.large {
-    padding: 16px 30px;
-    font-size: 1.5em;
+    padding: 14px 24px;
+    font-size: 18px;
 }
 
 .button.expanded {
     display: block;
     max-width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+    .button {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+    .button.large {
+        padding: 16px 30px;
+        font-size: 24px;
+    }
 }
 
 /* Utilities */
