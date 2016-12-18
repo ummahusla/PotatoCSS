@@ -13,15 +13,15 @@ PotatoCSS is a beautiful CSS framework for hackers: boasting a responsive 12 col
 
 [**PotatoCSS**](http://potatocss.com/) can be installed via the methods below,
 
-* Manual: [Download](https://github.com/ummahusla/PotatoCSS/archive/master.zip) 
+* Manual: [Download](https://github.com/ummahusla/PotatoCSS/archive/master.zip)
 * via NPM: `npm install potato-css`
 * via git: `git clone https://github.com/ummahusla/PotatoCSS.git`
 
 ## How to use
 
-Just grab `potato.css` or `potato.min.css` from the `dist/css` folder and shove it where you store the CSS files (usually `assets/css`) for your project.
+Just grab `potato.css` or `potato.min.css` from the `/css` folder and shove it where you store the CSS files for your project.
 
-You can also build from LESS / SASS source by installing my NPM (example above) and running the command `gulp __build`. Happy coding!
+[WIP] You can also build from LESS / SASS source by installing my NPM (example above) and running the command `gulp __build`. Happy coding!
 
 You can see PotatoCSS in action at [**http://potatocss.com**](http://potatocss.com).
 
