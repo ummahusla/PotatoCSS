@@ -273,7 +273,7 @@ hr {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
     color: #333;
