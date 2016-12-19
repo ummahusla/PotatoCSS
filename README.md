@@ -6,7 +6,7 @@
 
 ___
 
-PotatoCSS is a beautiful CSS framework for hackers: boasting a responsive 12 column grid, ready to use built-in forms and buttons, it's clean, simple and easy-to-use.
+🥔 PotatoCSS is a beautiful CSS framework for hackers: boasting a responsive 12 column grid, ready to use built-in forms and buttons, it's clean, simple and easy-to-use.
 
 
 ## Installation
@@ -25,7 +25,7 @@ Demo can be found at [**http://potatocss.com**](http://potatocss.com).
 
 Alternately, you can find examples and snippets to use with PotatoCSS in the [example folder](https://github.com/ummahusla/PotatoCSS/examples).
 
-P.S. SASS / LESS versions are still in development.
+📢 SASS / LESS versions are still in development
 
 ## Browser Support
 
@@ -41,9 +41,7 @@ The following details are estimates, assume [evergreen browser](http://stackover
 
 ## Contributing
 
-Please read the repository's [**contributing guide**](CONTRIBUTING.md) for more information on how you can help.
-
-Thanks for taking interest!
+Please read the repository's 🗒 [**contributing guide**](CONTRIBUTING.md) for more information on how you can help.
 
 ## License
 
@@ -53,4 +51,4 @@ Thanks for taking interest!
 
 [**PotatoCSS**](http://potatocss.com) was created for [**Hacktoberfest**](https://hacktoberfest.digitalocean.com/) by [**Edvins Antonovs**](https://twitter.com/edvinsantonovs). You can find more details in [**this blog post**](http://edvinsantonovs.co.uk/potatocss-and-hacktoberfest2016/).
 
-Big thanks to all the [**contributors**](https://github.com/ummahusla/PotatoCSS/graphs/contributors) who work and have worked on PotatoCSS.
+Big thanks to all the [**contributors**](https://github.com/ummahusla/PotatoCSS/graphs/contributors) :+1:.
