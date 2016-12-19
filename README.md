@@ -51,6 +51,6 @@ Thanks for taking interest!
 
 ## Credits
 
-[**PotatoCSS**](https://github.com/PotatoCSS/PotatoCSS) was created for [**Hacktoberfest**](https://hacktoberfest.digitalocean.com/) by [**Edvins Antonovs**](https://twitter.com/edvinsantonovs).
+[**PotatoCSS**](http://potatocss.com) was created for [**Hacktoberfest**](https://hacktoberfest.digitalocean.com/) by [**Edvins Antonovs**](https://twitter.com/edvinsantonovs). You can find more details in [**this blog post**](http://edvinsantonovs.co.uk/potatocss-and-hacktoberfest2016/).
 
 Big thanks to all the [**contributors**](https://github.com/ummahusla/PotatoCSS/graphs/contributors) who work and have worked on PotatoCSS.
