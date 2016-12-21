@@ -305,6 +305,16 @@ textarea {
   width: 100%;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
 textarea {
   font-size: 16px;
   min-height: 150px;
