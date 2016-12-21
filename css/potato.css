@@ -393,7 +393,7 @@ a:focus {
 }
 
 .button {
-  background-color: #fff;
+  background-color: transparent;
   color: #333;
   border: 1px solid #333;
 }
@@ -412,36 +412,12 @@ a:focus {
 
 .button.full:hover,
 .button.full:focus {
-  background-color: #fff;
+  background-color: transparent;
   color: #333;
 }
 
-.button.success {
-  background-color: #fff;
-  color: #27ae60;
-  border: 1px solid #27ae60;
-}
-
-.button.full.success {
-  background-color: #27ae60;
-  color: #fff;
-  border: 1px solid #27ae60;
-}
-
-.button.success:hover,
-.button.success:focus {
-  background-color: #27ae60;
-  color: #fff;
-}
-
-.button.full.success:hover,
-.button.full.success:focus {
-  background-color: #fff;
-  color: #27ae60;
-}
-
 .button.primary {
-  background-color: #fff;
+  background-color: tranparent;
   color: #3498db;
   border: 1px solid #3498db;
 }
@@ -460,12 +436,36 @@ a:focus {
 
 .button.full.primary:hover,
 .button.full.primary:focus {
-  background-color: #fff;
+  background-color: transparent;
   color: #3498db;
 }
 
+.button.success {
+  background-color: transparent;
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.button.full.success {
+  background-color: #27ae60;
+  color: #fff;
+  border: 1px solid #27ae60;
+}
+
+.button.success:hover,
+.button.success:focus {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.button.full.success:hover,
+.button.full.success:focus {
+  background-color: transparent;
+  color: #27ae60;
+}
+
 .button.warning {
-  background-color: #fff;
+  background-color: transparent;
   color: #f39c12;
   border: 1px solid #f39c12;
 }
@@ -484,12 +484,12 @@ a:focus {
 
 .button.full.warning:hover,
 .button.full.warning:focus {
-  background-color: #fff;
+  background-color: transparent;
   color: #f39c12;
 }
 
 .button.danger {
-  background-color: #fff;
+  background-color: transparent;
   color: #e74c3c;
   border: 1px solid #e74c3c;
 }
@@ -508,7 +508,7 @@ a:focus {
 
 .button.full.danger:hover,
 .button.full.danger:focus {
-  background-color: #fff;
+  background-color: transparent;
   color: #e74c3c;
 }
 
