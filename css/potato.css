@@ -117,6 +117,7 @@ h6 {
 .row {
   position: relative;
   width: 96%;
+  margin: 0 auto;
 }
 
 .row .potato,
@@ -352,7 +353,8 @@ input[type="checkbox"] + label {
 
 hr {
   position: relative;
-  width: 96%;
+  width: 90%;
+  margin: 0 auto;
   border: solid #ccc;
   border-width: 1px 0 0;
   clear: both;
