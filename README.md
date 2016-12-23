@@ -1,5 +1,5 @@
 <p align="center"><img src="logo.png" alt="PotatoCSS" /></p>
-<h3 align="center">PotatoCSS</h3>
+<h3 align="center"><a href="http://potatocss.com/">PotatoCSS</a></h3>
 <p align="center"><small><code>Simple CSS framework for hackers. Simple as potato.</code></small></p>
 
 [![npm version](https://badge.fury.io/js/potato-css.svg)](https://badge.fury.io/js/potato-css)
