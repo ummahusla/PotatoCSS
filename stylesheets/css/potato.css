@@ -615,3 +615,21 @@ table {
 .alpha-potato {
   list-style-type: lower-alpha;
 }
+
+/* Code */
+
+pre, code, kbd {
+  font-family: Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+pre {
+  white-space: pre;
+  border-radius: 5px;
+  background: #f7f7f7;
+  padding: 5px 20px;
+  margin: 5px 0;
+}
+
+code {
+  font-size: 14px;
+}
