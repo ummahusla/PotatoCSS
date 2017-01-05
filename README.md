@@ -19,7 +19,7 @@ ___
 
 ## How to use
 
-Just grab `potato.css` or `potato.min.css` from the `/css` folder and shove it where you store the CSS files for your project.
+Just grab `potato.css` or `potato.min.css` from the `/stylesheets/css` folder and shove it where you store the CSS files for your project.
 
 Demo can be found at [**http://potatocss.com**](http://potatocss.com).
 
