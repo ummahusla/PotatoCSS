@@ -25,7 +25,7 @@ Demo can be found at [**http://potatocss.com**](http://potatocss.com).
 
 Alternately, you can find examples and snippets to use with PotatoCSS in the [example folder](https://github.com/ummahusla/PotatoCSS/examples).
 
-📢 SASS / LESS versions are still in development
+📢 **SASS / LESS versions are still in development**
 
 ## Browser Support
 
