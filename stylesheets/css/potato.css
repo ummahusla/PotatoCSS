@@ -624,12 +624,24 @@ pre, code, kbd {
 
 pre {
   white-space: pre;
-  border-radius: 5px;
-  background: #f7f7f7;
+  border-radius: 3px;
+  background-color: #ededed;
   padding: 5px 20px;
   margin: 5px 0;
 }
 
-code {
+pre code {
   font-size: 14px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+code,
+kbd {
+  background-color: #ededed;
+  font-size: 13px;
+  margin: 0;
+  padding: 3px 6px;
+  border-radius: 3px;
 }
