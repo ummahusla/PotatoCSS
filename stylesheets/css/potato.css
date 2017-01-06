@@ -616,9 +616,12 @@ table {
   list-style-type: lower-alpha;
 }
 
+
 /* Code */
 
-pre, code, kbd {
+pre,
+code,
+kbd {
   font-family: Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -644,4 +647,30 @@ kbd {
   margin: 0;
   padding: 3px 6px;
   border-radius: 3px;
+}
+
+.panel {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: 1px solid #333;
+}
+
+.panel.round {
+  border-radius: 4px;
+}
+
+.panel.primary {
+  background-color: #3498db;
+}
+
+.panel.success {
+  background-color: #27ae60;
+}
+
+.panel.warning {
+  background-color: #f39c12;
+}
+
+.panel.danger {
+  background-color: #e74c3c;
 }
