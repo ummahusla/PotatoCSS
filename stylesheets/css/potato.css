@@ -651,7 +651,7 @@ kbd {
 
 .panel {
   padding: 10px 15px;
-  margin: 10px 5px;
+  margin: 5px 0;
   border: 1px solid #333;
 }
 
