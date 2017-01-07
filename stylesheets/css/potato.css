@@ -98,6 +98,11 @@ h6 {
   }
 }
 
+blockquote {
+  margin: 28px 0 28px -36px;
+  padding: 0 0 0 28px;
+  border-left: 6px solid #333;
+}
 
 /* Grid */
 
