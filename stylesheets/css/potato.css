@@ -353,7 +353,7 @@ input[type="checkbox"] + label {
 
 hr {
   position: relative;
-  width: 90%;
+  width: 60%;
   margin: 30px auto;
   border: solid #ccc;
   border-width: 1px 0 0;
