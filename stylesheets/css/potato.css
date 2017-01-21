@@ -607,6 +607,7 @@ table {
 
 .inline-potato {
   display: inline;
+  padding: 0;
 }
 
 .inline-potato li {
@@ -701,4 +702,38 @@ code {
 
 .panel.danger {
   background-color: #e74c3c;
+}
+
+/* Label */
+
+.label {
+  display: inline;
+  line-height: 1;
+  font-size: 80%;
+  color: #333;
+  border: 1px solid #333;
+  text-align: center;
+  white-space: nowrap;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+
+.label.primary {
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.label.success {
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.label.warning {
+  color: #f39c12;
+  border: 1px solid #f39c12;
+}
+
+.label.danger {
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
 }
