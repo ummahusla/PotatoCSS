@@ -605,6 +605,14 @@ table {
 
 /* Unordered list markers */
 
+.inline-potato {
+  display: inline;
+}
+
+.inline-potato li {
+  display: inline;
+}
+
 .circle-potato {
   list-style-type: circle;
 }
