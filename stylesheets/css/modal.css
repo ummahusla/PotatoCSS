@@ -43,9 +43,20 @@ body.no-scroll {
   transform: translateY(0%);
 }
 
+@media (min-width: 992px) {
+  .modal.large .modal-dialog {
+    max-width: 800px;
+  }
+}
+
 @media (min-width: 576px) {
   .modal .modal-dialog {
     margin: 30px auto;
+    max-width: 500px;
+  }
+
+  .modal.small .modal-dialog{
+    max-width: 300px;
   }
 }
 

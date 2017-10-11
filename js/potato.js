@@ -28,9 +28,9 @@
       });
 
       document.addEventListener('keydown', function(e) {
-        e.preventDefault();
         if(target.className.split(" ").indexOf('open') >= 0) {
           if(e.keyCode == 27 || e.which == 27) {
+            e.preventDefault();
             toggleModal(target);
           }
         }
