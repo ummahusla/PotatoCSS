@@ -46,7 +46,7 @@ gulp.task('sass', () => {
 })
 
 gulp.task('watch', () => {
-  gulp.watch(['./stylesheets/sass/**/*.scss', '!./stylesheets/sass/**/_*.scss'], ['sass'])
+  // gulp.watch(['./stylesheets/sass/**/*.scss', '!./stylesheets/sass/**/_*.scss'], ['sass'])
   gulp.watch(['./js/**/*.js'], ['js'])
   gulp.watch(['./examples/*.html']).on('change', browserSync.reload);
 })
