@@ -1,133 +1,133 @@
 //* Forms *//
 
 .input_text {
-    background-color: $white-color;
-    border: 1px solid $primary-color;
-    color: $primary-color;
-    border-radius: 4px;
-    display: block;
-    font-size: 1em;
-    line-height: 1;
-    height: 46px;
-    margin: 0 0 20px 0;
-    padding: 0 10px;
-    width: 100%;
-    
-    // ::placeholder supported in IE 10+ (http://caniuse.com/css-placeholder/embed/), this will turn off in unsupport browsers, so no biggie.
-    
-    &:focus {
-        border-color: $primary-color !important;
-        &::placeholder {
-            color: $primary-color !important;
-        }
-    }
-    
-    &.info {
-        border-color: $info-color;
-        
-        &::placeholder {
-            color: $info-color;
-        }
-        
-    }
-    
-    &.success {
-        border-color: $success-color;
-        
-        &::placeholder {
-            color: $success-color;
-        }
-    }
-    
-    &.warning {
-        border-color: $warning-color;
-        
-        &::placeholder {
-            color: $warning-color;
-        }
-    }
-    
-    &.danger,
-    &.error {
-        border-color: $danger-color;
-        
-        &::placeholder {
-            color: $danger-color;
-        }
-    }
+	background-color: $white-color;
+	border: 1px solid $primary-color;
+	color: $primary-color;
+	border-radius: 4px;
+	display: block;
+	font-size: 1em;
+	line-height: 1;
+	height: 46px;
+	margin: 0 0 20px 0;
+	padding: 0 10px;
+	width: 100%;
+
+	// ::placeholder supported in IE 10+ (http://caniuse.com/css-placeholder/embed/), this will turn off in unsupport browsers, so no biggie.
+
+	&:focus {
+		border-color: $primary-color !important;
+		&::placeholder {
+			color: $primary-color !important;
+		}
+	}
+
+	&.info {
+		border-color: $info-color;
+
+		&::placeholder {
+			color: $info-color;
+		}
+
+	}
+
+	&.success {
+		border-color: $success-color;
+
+		&::placeholder {
+			color: $success-color;
+		}
+	}
+
+	&.warning {
+		border-color: $warning-color;
+
+		&::placeholder {
+			color: $warning-color;
+		}
+	}
+
+	&.danger,
+	&.error {
+		border-color: $danger-color;
+
+		&::placeholder {
+			color: $danger-color;
+		}
+	}
 }
 
 input[type="text"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="password"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="date"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="datetime"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="email"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="number"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="tel"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="time"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="url"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 input[type="color"] {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 select {
-    @extend .input_text;
+	@extend .input_text;
 }
 
 textarea {
-    @extend .input_text;
-    min-height: 150px;
-    padding: 10px;
-    line-height: 1.5;
+	@extend .input_text;
+	min-height: 150px;
+	padding: 10px;
+	line-height: 1.5;
 }
 
 label {
-    display: block;
+	display: block;
 }
 
-input[type="radio"] + label, input[type="checkbox"] + label  {
-    display: inline-block;
+input[type="radio"] + label, input[type="checkbox"] + label {
+	display: inline-block;
 }
 
 ::-webkit-input-placeholder {
-   color: $primary-color;
+	color: $primary-color;
 }
 
 :-moz-placeholder {
-   color: $primary-color;
+	color: $primary-color;
 }
 
 ::-moz-placeholder {
-   color: $primary-color;
+	color: $primary-color;
 }
 
 :-ms-input-placeholder {
-   color: $primary-color;
+	color: $primary-color;
 }

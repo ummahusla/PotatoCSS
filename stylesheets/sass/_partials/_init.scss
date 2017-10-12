@@ -5,22 +5,22 @@
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; // IE 8+ to use box-sizing, < IE 9 support is pretty much void at this point
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; // IE 8+ to use box-sizing, < IE 9 support is pretty much void at this point
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    color: $base-text-color;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	color: $base-text-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: $heading-margin;
+	margin: $heading-margin;
 }

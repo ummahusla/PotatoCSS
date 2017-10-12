@@ -1,62 +1,62 @@
 //* Utilities *//
 
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 
 .text-right {
-    text-align: right;
+	text-align: right;
 }
 
 .text-left {
-    text-align: left;
+	text-align: left;
 }
 
 .text-justify {
-    text-align: justify;
+	text-align: justify;
 }
 
 .float-left {
-    float: left;
+	float: left;
 }
 
 .float-right {
-    float: right;
+	float: right;
 }
 
 .font-light {
-    font-weight: lighter;
+	font-weight: lighter;
 }
 
 .font-normal {
-    font-weight: normal;
+	font-weight: normal;
 }
 
 .font-bold {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .allow-overflow {
-    overflow: auto;
-    
-    &-x {
-        overflow-y: auto;
-    }
-    
-    &-y {
-        overflow-y: auto;
-    }
+	overflow: auto;
+
+	&-x {
+		overflow-y: auto;
+	}
+
+	&-y {
+		overflow-y: auto;
+	}
 }
 
 .hide-overflow,
 .forbid-overflow {
-    overflow: hidden;
-    
-    &-x {
-        overflow-y: hidden;
-    }
-    
-    &-y {
-        overflow-y: hidden;
-    }
+	overflow: hidden;
+
+	&-x {
+		overflow-y: hidden;
+	}
+
+	&-y {
+		overflow-y: hidden;
+	}
 }
