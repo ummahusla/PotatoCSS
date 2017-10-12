@@ -1,13 +1,10 @@
 body,html {
   width: 100%;
   height: 100%;
-  transition: overflow 0s linear 3s;
 }
 
 body.no-scroll {
   overflow: hidden;
-  transition: overflow 0s linear 3s;
-  /*transition: padding 0s linear 0s;*/
 }
 
 .modal {
