@@ -2,7 +2,9 @@
   "name": "potato-css",
   "version": "1.0.2",
   "description": "Simple CSS framework for hackers. Simple as potato. ",
-  "authors": ["Edvins Antonovs <ummahusla@gmail.com>"],
+  "authors": [
+    "Edvins Antonovs <ummahusla@gmail.com>"
+  ],
   "main": "stylesheets/css/potato.css",
   "scripts": {
     "install": "gulpfile.js"
@@ -12,7 +14,12 @@
     "url": "git+https://github.com/ummahusla/PotatoCSS.git"
   },
   "keywords": [
-    "CSS", "CSS-framework", "UI", "responsive-grid", "responsive", "layout"
+    "CSS",
+    "CSS-framework",
+    "UI",
+    "responsive-grid",
+    "responsive",
+    "layout"
   ],
   "author": "Edvins Antonovs",
   "license": "MIT",
@@ -21,5 +28,17 @@
   },
   "homepage": "https://github.com/ummahusla/PotatoCSS#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-util": "^3.0.8",
+    "node-notifier": "^5.1.2"
   }
 }
