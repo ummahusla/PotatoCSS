@@ -5,8 +5,6 @@
   modalToggles.forEach(function(item) {
     var target = document.querySelector(item.getAttribute('data-target'));
     if(target != null || target != undefined) {
-      target.scrollTo(0, 0);
-
       item.addEventListener('click', function(e) {
         e.preventDefault();
         toggleModal(target);
