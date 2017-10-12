@@ -12,45 +12,45 @@
     margin: 0 0 20px 0;
     padding: 0 10px;
     width: 100%;
-    
+
     // ::placeholder supported in IE 10+ (http://caniuse.com/css-placeholder/embed/), this will turn off in unsupport browsers, so no biggie.
-    
+
     &:focus {
         border-color: $primary-color !important;
         &::placeholder {
             color: $primary-color !important;
         }
     }
-    
+
     &.info {
         border-color: $info-color;
-        
+
         &::placeholder {
             color: $info-color;
         }
-        
+
     }
-    
+
     &.success {
         border-color: $success-color;
-        
+
         &::placeholder {
             color: $success-color;
         }
     }
-    
+
     &.warning {
         border-color: $warning-color;
-        
+
         &::placeholder {
             color: $warning-color;
         }
     }
-    
+
     &.danger,
     &.error {
         border-color: $danger-color;
-        
+
         &::placeholder {
             color: $danger-color;
         }
@@ -112,22 +112,22 @@ label {
     display: block;
 }
 
-input[type="radio"] + label, input[type="checkbox"] + label  {
+input[type="radio"] + label, input[type="checkbox"] + label {
     display: inline-block;
 }
 
 ::-webkit-input-placeholder {
-   color: $primary-color;
+    color: $primary-color;
 }
 
 :-moz-placeholder {
-   color: $primary-color;
+    color: $primary-color;
 }
 
 ::-moz-placeholder {
-   color: $primary-color;
+    color: $primary-color;
 }
 
 :-ms-input-placeholder {
-   color: $primary-color;
+    color: $primary-color;
 }

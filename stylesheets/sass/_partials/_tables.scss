@@ -20,15 +20,15 @@ table,
     > .table-body {
         min-width: 100%;
     }
-    
+
     &.centered {
         margin: 0 auto;
     }
-    
+
     &.stretch {
         min-width: $primary-width;
     }
-    
+
     @media only screen and (min-width: 64em) {
         min-width: $primary-width / 2;
         margin: 0 4px;
@@ -60,11 +60,11 @@ tr,
         background-color: lighten($border-color, 12.5%);
         border-top: 0;
     }
-    
+
     &:last-child {
         border-bottom: 0;
     }
-    
+
 }
 
 th,
@@ -80,11 +80,11 @@ td, .table-cell {
     &:hover {
         background-color: $border-color;
     }
-    
+
     &:first-child {
         border-left: 0;
     }
-    
+
     &:last-child {
         border-right: 0;
     }

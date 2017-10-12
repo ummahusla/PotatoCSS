@@ -28,4 +28,5 @@ Found a critical bug in the source code or a mistake in the documentation? Pleas
 All current issues are listed [**here**](https://github.com/PotatoCSS/PotatoCSS/issues).
 
 ## Notes
-Please reference issues by issue id (e.g. `#1337`) and write a detailed `Pull Request` description. 
+Please reference issues by issue id (e.g. `#1337`) and write a detailed `Pull Request` description.
+ 

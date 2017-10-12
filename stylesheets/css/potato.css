@@ -3,10 +3,7 @@
 * License: MIT License
 * Website: http://potatocss.com/
 */
-
-
 /* Import Google Font "Roboto" */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i);
 
 /* Global styles */
@@ -29,11 +26,10 @@ body {
   padding: 0;
 }
 
-
 /*Typography*/
 
 * {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: lighter;
   line-height: 1.5;
   color: #333;
@@ -81,18 +77,23 @@ h6 {
   h1 {
     font-size: 30px;
   }
+
   h2 {
     font-size: 26px;
   }
+
   h3 {
     font-size: 22px;
   }
+
   h4 {
     font-size: 15px;
   }
+
   h5 {
     font-size: 14px;
   }
+
   h6 {
     font-size: 16px;
   }
@@ -142,7 +143,6 @@ blockquote {
   width: 96%;
   float: left !important;
 }
-
 
 /* Mobile (Small) */
 
@@ -195,7 +195,6 @@ blockquote {
   width: 96%;
 }
 
-
 /* Tablet (Medium) */
 
 @media screen and (min-width: 40em) {
@@ -203,41 +202,51 @@ blockquote {
   .one-medium.potatoes {
     width: 4.33%;
   }
+
   .two-medium.potatoes {
     width: 12.66%;
   }
+
   .three-medium.potatoes {
     width: 21%;
   }
+
   .four-medium.potatoes {
     width: 29.33%;
   }
+
   .five-medium.potatoes {
     width: 37.66%;
   }
+
   .six-medium.potatoes {
     width: 46%;
   }
+
   .seven-medium.potatoes {
     width: 54.33%;
   }
+
   .eight-medium.potatoes {
     width: 62.66%;
   }
+
   .nine-medium.potatoes {
     width: 71%;
   }
+
   .ten-medium.potatoes {
     width: 79.33%;
   }
+
   .eleven-medium.potatoes {
     width: 87.66%;
   }
+
   .twelve-medium.potatoes {
     width: 96%;
   }
 }
-
 
 /* Desktop (Large) */
 
@@ -246,41 +255,51 @@ blockquote {
   .one-large.potatoes {
     width: 4.33%;
   }
+
   .two-large.potatoes {
     width: 12.66%;
   }
+
   .three-large.potatoes {
     width: 21%;
   }
+
   .four-large.potatoes {
     width: 29.33%;
   }
+
   .five-large.potatoes {
     width: 37.66%;
   }
+
   .six-large.potatoes {
     width: 46%;
   }
+
   .seven-large.potatoes {
     width: 54.33%;
   }
+
   .eight-large.potatoes {
     width: 62.66%;
   }
+
   .nine-large.potatoes {
     width: 71%;
   }
+
   .ten-large.potatoes {
     width: 79.33%;
   }
+
   .eleven-large.potatoes {
     width: 87.66%;
   }
+
   .twelve-large.potatoes {
     width: 96%;
   }
 }
-
 
 /* Form */
 
@@ -297,7 +316,7 @@ input[type="url"],
 input[type="color"],
 select,
 textarea {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
@@ -353,7 +372,6 @@ input[type="checkbox"] + label {
   color: #333;
 }
 
-
 /* Other */
 
 hr {
@@ -376,7 +394,6 @@ a:hover,
 a:focus {
   color: #8c8a8a;
 }
-
 
 /* Buttons */
 
@@ -424,7 +441,7 @@ a:focus {
 }
 
 .button.primary {
-  background-color: tranparent;
+  background-color: transparent;
   color: #3498db;
   border: 1px solid #3498db;
 }
@@ -542,13 +559,13 @@ a:focus {
     padding: 14px 20px;
     font-size: 16px;
   }
+
   .button.large,
   .button.full.large {
     padding: 16px 30px;
     font-size: 24px;
   }
 }
-
 
 /* Tables */
 
@@ -562,7 +579,6 @@ table {
   border-collapse: separate;
   border-spacing: 2px;
 }
-
 
 /* Utilities */
 
@@ -602,7 +618,6 @@ table {
   font-weight: bold;
 }
 
-
 /* Unordered list markers */
 
 .inline-potato {
@@ -629,7 +644,6 @@ table {
 .alpha-potato {
   list-style-type: lower-alpha;
 }
-
 
 /* Code */
 
@@ -664,7 +678,7 @@ code {
   border: 1px solid #ccc;
 }
 
- kbd {
+kbd {
   display: inline-block;
   background-color: #f7f7f7;
   font-size: 13px;
