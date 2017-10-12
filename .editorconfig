@@ -12,7 +12,7 @@ end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{css,html,json}]
+[*.{css,html,js,json}]
 indent_size = 2
 
 [*.{scss,less}]
