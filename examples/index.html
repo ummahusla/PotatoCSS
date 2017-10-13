@@ -1,0 +1,583 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>PotatoCSS</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../stylesheets/css/potato.css">
+    <style>
+      #header {
+        padding: 30px 0;
+      }
+
+      #header h1 {
+        font-weight: bold;
+      }
+
+      #grid {
+        text-align: center;
+      }
+
+      #grid h1 {
+        text-align: left;
+      }
+
+      #grid p {
+        padding: 10px 0;
+        margin: 5px 0;
+        border-radius: 5px;
+        color: #333;
+        border: 1px solid #333;
+        background-color: #fff;
+        -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+        transition: background-color 0.2s ease-out, color 0.2s ease-out;
+      }
+
+      #grid p:hover, #grid p:focus {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #footer {
+        padding: 30px 0;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="header">
+      <div class="row">
+        <div class="text-center twelve-large potatoes">
+          <img src="logo.png" />
+          <h1>PotatoCSS</h1>
+          <h3>Simple CSS framework for hackers. Simple as potato.</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="description">
+      <div class="row">
+        <div class="eight-large potatoes">
+          <h4>Description</h4>
+          <p><a href="https://github.com/ummahusla/PotatoCSS">PotatoCSS</a> is a beautiful CSS framework for hackers. It's clean, simple and easy-to-use. It has a responsive 12 column grid, ready to use built-in forms and buttons.</p>
+          <a href="https://github.com/ummahusla/PotatoCSS/archive/master.zip" class="button success">Download</a>
+          <a href="https://github.com/ummahusla/PotatoCSS/" class="button">View on GitHub</a>
+          <a href="https://github.com/ummahusla/PotatoCSS/issues" class="button danger">Report a bug</a>
+        </div>
+        <div class="four-large potatoes">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#labels">Labels</a></li>
+            <li><a href="#panels">Panels</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="grid">
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+          <h1 class="font-bold">Grid</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+          <p>twelve</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="one-large potatoes">
+          <p>one</p>
+        </div>
+        <div class="eleven-large potatoes">
+          <p>eleven</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="two-large potatoes">
+          <p>two</p>
+        </div>
+        <div class="ten-large potatoes">
+          <p>ten</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="three-large potatoes">
+          <p>three</p>
+        </div>
+        <div class="nine-large potatoes">
+          <p>nine</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four-large potatoes">
+          <p>four</p>
+        </div>
+        <div class="eight-large potatoes">
+          <p>eight</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="five-large potatoes">
+          <p>five</p>
+        </div>
+        <div class="seven-large potatoes">
+          <p>seven</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six-large potatoes">
+          <p>six</p>
+        </div>
+        <div class="six-large potatoes">
+          <p>six</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="seven-large potatoes">
+          <p>seven</p>
+        </div>
+        <div class="five-large potatoes">
+          <p>five</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="eight-large potatoes">
+          <p>eight</p>
+        </div>
+        <div class="four-large potatoes">
+          <p>four</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="nine-large potatoes">
+          <p>nine</p>
+        </div>
+        <div class="three-large potatoes">
+          <p>three</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ten-large potatoes">
+          <p>ten</p>
+        </div>
+        <div class="two-large potatoes">
+          <p>two</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="eleven-large potatoes">
+          <p>eleven</p>
+        </div>
+        <div class="one-large potato">
+          <p>one</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+          <p>twelve</p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div id="buttons">
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+          <h1 class="font-bold">Buttons</h1>
+          <p>Default button classes</p>
+          <a href="#" class="button">Default</a>
+          <a href="#" class="button primary">Primary</a>
+          <a href="#" class="button success">Success</a>
+          <a href="#" class="button warning">Warning</a>
+          <a href="#" class="button danger">Danger</a>
+        </div>
+        <div class="twelve-large potatoes">
+          <a href="#" class="button full">Default</a>
+          <a href="#" class="button full primary">Primary</a>
+          <a href="#" class="button full success">Success</a>
+          <a href="#" class="button full warning">Warning</a>
+          <a href="#" class="button full danger">Danger</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six-large potatoes">
+          <p>Button sizing</p>
+          <div>
+            <a href="#" class="button small">Small</a>
+            <a href="#" class="button">Default</a>
+            <a href="#" class="button large">Large</a>
+          </div>
+          <div>
+            <a href="#" class="button full large success">Large</a>
+            <a href="#" class="button full primary">Default</a>
+            <a href="#" class="button full small danger">Small</a>
+          </div>
+        </div>
+        <div class="six-large potatoes">
+          <p>Button expanded</p>
+          <a href="#" class="button expanded">Expanded</a>
+          <a href="#" class="button success expanded">Expanded</a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div id="typography">
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+
+          <h1 class="font-bold">Typography</h1>
+
+          <p>Headers</p>
+
+          <h1>h1. All their equipment and instruments are alive.</h1>
+          <h2>h2. A red flair silhouetted the jagged edge of a wing.</h2>
+          <h3>h3. I watched the storm, so beautiful yet terrific.</h3>
+          <h4>h4. Almost before we knew it, we had left the ground.</h4>
+          <h5>h5. A shining crescent far beneath the flying vessel.</h5>
+          <h6>h6. She stared through the window at the stars.</h6>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+
+            <p>Paragraph</p>
+            <p class="text-justify">
+              Vivamus facilisis justo sit amet ligula ornare, nec tempus ante tincidunt. Pellentesque id quam eleifend, molestie velit in, porta tellus. Ut erat tellus, efficitur eget sem nec, sagittis semper felis. Nullam suscipit suscipit justo eget pretium. In mi erat, dictum non suscipit et, malesuada quis lorem. Aliquam molestie ac arcu porttitor sollicitudin. Phasellus dignissim ut velit non mattis. Sed posuere ligula ut augue mollis, ut sodales est aliquam. Fusce nec augue et velit dapibus tincidunt nec ac quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed feugiat nibh in purus aliquam, in fringilla justo venenatis. Nulla velit erat, imperdiet sed risus in, mattis aliquam mi. Etiam sed nunc ornare, congue libero ut, pellentesque libero.
+            </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+
+            <p>Blockquote</p>
+
+            <blockquote>
+              <p>
+                Aliquam erat volutpat. Duis euismod aliquam mi at faucibus. Donec interdum pulvinar eros. Morbi vitae maximus urna, vel faucibus leo. Vivamus vitae leo porttitor, tincidunt lectus ac, tempor lectus. Ut.
+              </p>
+            </blockquote>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div id="forms">
+      <form>
+
+        <div class="row">
+          <div class="twelve-large potatoes">
+
+            <h1 class="font-bold">Forms</h1>
+
+            <label>Input Label
+              <input type="text" placeholder="Twelve potatoes" />
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="four-large potatoes">
+            <label>Input Label
+              <input type="text" placeholder="Four potatoes" />
+            </label>
+          </div>
+          <div class="four-large potatoes">
+            <label>Input Label
+              <input type="text" placeholder="Four potatoes" />
+            </label>
+          </div>
+          <div class="four-large potatoes">
+            <label>Input Label
+              <input type="text" placeholder="Four potatoes" />
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="six-large potatoes">
+            <label>Select option
+              <select>
+                <option value="hello">Hello</option>
+                <option value="bonsua">Bonsua</option>
+                <option value="sveiki">Sveiki</option>
+                <option value="ola">Ola</option>
+              </select>
+            </label>
+          </div>
+          <div class="six-large potatoes">
+            <label>Select option
+              <select>
+                <option value="potato">Potato</option>
+                <option value="asparagus">Asparagus</option>
+                <option value="avocado">Avocado</option>
+                <option value="rhubarb">Rhubarb</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="six-large potatoes">
+            <label>Radio buttons</label>
+
+            <input id="radioYes" type="radio" name="radio" value="Yes">
+            <label for="radioYes">Yes</label>
+            <input id="radioNo" type="radio" name="radio" value="No">
+            <label for="radioNo">No</label>
+          </div>
+          <div class="six-large potatoes">
+            <label>Checkbox buttons</label>
+
+            <input id="checkbox1" type="checkbox">
+            <label for="checkbox1">Checkbox 1</label>
+            <input id="checkbox2" type="checkbox">
+            <label for="checkbox2">Checkbox 2</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="twelve-large potatoes">
+            <label>Textarea Label
+              <textarea placeholder="Twelve potatoes textarea"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="twelve-large potatoes">
+            <input type="submit" class="button success" value="Submit">
+            <input type="submit" class="button danger" value="Reset">
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <hr>
+
+    <div id="lists">
+
+      <div class="row">
+        <div class="twelve-large potatoes">
+          <h1 class="font-bold">Lists</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four-large potatoes">
+          <ol>
+            <li>Pumpkin Spice Latte</li>
+            <li>Green Tea Latte</li>
+            <li>Youthberry Tea</li>
+            <li>Citrus Mint Green Tea Latte</li>
+            <li>Pumpkin Spice Frappuccino</li>
+            <li>Jasmine Pearls</li>
+            <li>Berry Smoothie</li>
+          </ol>
+        </div>
+        <div class="four-large potatoes">
+          <ul>
+            <li>Pumpkin Spice Latte</li>
+            <li>Green Tea Latte</li>
+            <li>Youthberry Tea</li>
+            <li>Citrus Mint Green Tea Latte</li>
+            <li>Pumpkin Spice Frappuccino</li>
+            <li>Jasmine Pearls</li>
+            <li>Berry Smoothie</li>
+          </ul>
+        </div>
+        <div class="four-large potatoes">
+          <ol class="circle-potato">
+            <li>Pumpkin Spice Latte</li>
+            <li>Green Tea Latte</li>
+            <li>Youthberry Tea</li>
+            <li>Citrus Mint Green Tea Latte</li>
+            <li>Pumpkin Spice Frappuccino</li>
+            <li>Jasmine Pearls</li>
+            <li>Berry Smoothie</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four-large potatoes">
+          <ul class="alpha-potato">
+            <li>Pumpkin Spice Latte</li>
+            <li>Green Tea Latte</li>
+            <li>Youthberry Tea</li>
+            <li>Citrus Mint Green Tea Latte</li>
+            <li>Pumpkin Spice Frappuccino</li>
+            <li>Jasmine Pearls</li>
+            <li>Berry Smoothie</li>
+          </ul>
+        </div>
+        <div class="four-large potatoes">
+          <ol class="roman-potato">
+            <li>Pumpkin Spice Latte</li>
+            <li>Green Tea Latte</li>
+            <li>Youthberry Tea</li>
+            <li>Citrus Mint Green Tea Latte</li>
+            <li>Pumpkin Spice Frappuccino</li>
+            <li>Jasmine Pearls</li>
+            <li>Berry Smoothie</li>
+          </ol>
+        </div>
+        <div class="four-large potatoes">
+          <ul class="square-potato">
+            <li>Pumpkin Spice Latte</li>
+            <li>Green Tea Latte</li>
+            <li>Youthberry Tea</li>
+            <li>Citrus Mint Green Tea Latte</li>
+            <li>Pumpkin Spice Frappuccino</li>
+            <li>Jasmine Pearls</li>
+            <li>Berry Smoothie</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+  <div id="code">
+    <div class="row">
+      <div class="twelve-large potatoes">
+        <h1 class="font-bold">Code</h1>
+
+        <h3>Inline code</h3>
+        <p>Here is a simple example of inline code - <code>var myLatlng = {lat: -25.363, lng: 131.044};</code>.</p>
+
+        <h3>Code block</h3>
+        <pre>
+<code>
+{
+    "id": 1,
+    "name": "A green door",
+    "price": 12.50,
+    "tags": ["home", "green"]
+}</code>
+        </pre>
+
+        <h3>Keyboard input</h3>
+        <p>In order to undo the last operation <kbd>Ctrl</kbd> + <kbd>Z</kbd>. In case you want to redo the last operation <kbd>Ctrl</kbd> + <kbd>Y</kbd>.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="labels">
+
+    <div class="row">
+      <div class="twelve-large potatoes">
+        <h1 class="font-bold">Labels</h1>
+      </div>
+      <div class="twelve-large potatoes">
+        <ul class="inline-potato">
+          <li>
+            <span class="label">Default</span>
+          </li>
+          <li>
+            <span class="label primary">Primary</span>
+          </li>
+          <li>
+            <span class="label success">Success</span>
+          </li>
+          <li>
+            <span class="label warning">Warning</span>
+          </li>
+          <li>
+            <span class="label danger">Danger</span>
+          </li>
+        <ul>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div id="panels">
+
+    <div class="row">
+      <div class="twelve-large potatoes">
+        <h1 class="font-bold">Panels</h1>
+      </div>
+      <div class="row">
+        <div class="six-large potatoes">
+          <p>Default panel</p>
+          <div class="panel">
+            <h3>Panel Default</h3>
+            <p>
+              Aliquam erat volutpat. Duis euismod aliquam mi at faucibus. Donec interdum pulvinar eros. Morbi vitae maximus urna, vel faucibus leo. Vivamus vitae leo porttitor, tincidunt lectus ac, tempor lectus. Ut.
+            </p>
+          </div>
+        </div>
+        <div class="six-large potatoes">
+          <p>Rounded warning panel</p>
+          <div class="panel round warning">
+            <h3>Panel Warning</h3>
+            <p>
+              Aliquam erat volutpat. Duis euismod aliquam mi at faucibus. Donec interdum pulvinar eros. Morbi vitae maximus urna, vel faucibus leo. Vivamus vitae leo porttitor, tincidunt lectus ac, tempor lectus. Ut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="row">
+        <div class="text-center twelve-large potatoes">
+          <p>Created with potato and love by <a href="https://twitter.com/edvinsantonovs">Edvins Antonovs</a>.</p>
+          <p><a href="https://github.com/PotatoCSS/PotatoCSS">GitHub</a> | <a href="https://twitter.com/edvinsantonovs">Twitter</a> | <a href="https://github.com/PotatoCSS/PotatoCSS/blob/master/license.md">MIT License</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
