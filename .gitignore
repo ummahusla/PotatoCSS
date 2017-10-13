@@ -11,6 +11,9 @@
 .sublime-syntax
 .sublime-workspace
 
+# IntelliJ IDEA #
+.idea
+
 ## Ignore any unwanted directories ##
 
 # Cloud 9 #

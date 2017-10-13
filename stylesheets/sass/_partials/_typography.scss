@@ -1,21 +1,20 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: $heading-font-family;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
-    line-height: $heading-line-height !important;
+	font-family: $heading-font-family;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	line-height: $heading-line-height !important;
 }
 
 @for $i from 1 through 6 {
-	$math: ( 7 - $i );
+	$math: (7 - $i);
 	h#{$math} {
 		@if $i < 2 {
-            font-size: 1rem;
-        }
-        @else {
-            font-size: ( $i/$heading-font-size-divisory-denominator ) +  .75rem;
-        }
-        @media only screen and (min-width: 40rem) {
-            font-size: ( $i/$heading-font-size-divisory-denominator ) +  .875rem;
-        }
+			font-size: 1rem;
+		} @else {
+			font-size: ( $i/$heading-font-size-divisory-denominator ) +  .75rem;
+		}
+		@media only screen and (min-width: 40rem) {
+			font-size: ( $i/$heading-font-size-divisory-denominator ) +  .875rem;
+		}
 	}
 }
