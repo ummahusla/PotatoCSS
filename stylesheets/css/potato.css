@@ -751,3 +751,17 @@ kbd {
 	color: #e74c3c;
 	border: 1px solid #e74c3c;
 }
+
+/* Images */
+
+img {
+	max-width: 100%;
+}
+
+.img-thumb {
+	border: 1px solid #333;
+}
+
+.img-thumb.round {
+	border-radius: 4px;
+}
