@@ -1,0 +1,32 @@
+//* Mixins *//
+
+@mixin screen($width) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin potatoes($count:1, $of:length($potatoes), $gutter: $gutter) {
+	width: ($count / $of) * 100% - $gutter * 2;
+}
+
+@mixin hover() {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+@mixin before($content:"") {
+	&::before {
+		content: $content;
+		@content;
+	}
+}
+
+@mixin after($content:"") {
+	&::after {
+		content: $content;
+		@content;
+	}
+}

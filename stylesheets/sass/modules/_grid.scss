@@ -1,0 +1,52 @@
+/* Grid */
+
+.container {
+	width: 96%;
+	position: relative;
+	max-width: $container-max-width;
+	margin: 0 auto;
+
+	@include after() {
+		clear: both;
+		display: table;
+	}
+}
+
+.row {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+
+	@include after() {
+		clear: both;
+		display: table;
+	}
+
+	.potato,
+	.potatoes {
+		margin: 8px 2%;
+		min-height: 2px;
+	}
+}
+
+.potato,
+.potatoes {
+	@include potatoes(12);
+	float: left !important;
+}
+
+@each $count in $potatoes {
+	$index: index($potatoes, $count);
+	.#{$count}-large {
+		@if ($index == 1) {
+			&.potato,
+			&.potatoes {
+				@include potatoes($index);
+			}
+		} @else {
+			&.potatoes {
+				@include potatoes($index);
+			}
+		}
+	}
+}
