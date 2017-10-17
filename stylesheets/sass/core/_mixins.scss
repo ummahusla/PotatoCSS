@@ -17,7 +17,7 @@
 	}
 }
 
-@mixin before($content:"") {
+@mixin before($content:" ") {
 	&::before {
 		content: $content;
 		@content;

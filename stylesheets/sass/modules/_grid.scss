@@ -37,7 +37,7 @@
 
 @each $count in $potatoes {
 	$index: index($potatoes, $count);
-	.#{$count}-large {
+	.#{$count} {
 		@if ($index == 1) {
 			&.potato,
 			&.potatoes {

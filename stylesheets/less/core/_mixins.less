@@ -1,0 +1,32 @@
+//* Mixins *//
+
+.screen(@width, @rules) {
+	@media screen and (min-width: @width) {
+		@rules();
+	}
+}
+
+.potatoes(@count: 1, @of: @potatoes, @gutter: @gutter) {
+	width: (@count / @of) * 100% - @gutter * 2;
+}
+
+.hover (@rules) {
+	&:hover,
+	&:focus {
+		@rules();
+	}
+}
+
+.before(@rules, @content: "") {
+	&::before {
+		content: @content;
+		@rules();
+	}
+}
+
+.after(@rules, @content: "") {
+	&::after {
+		content: @content;
+		@rules();
+	}
+}

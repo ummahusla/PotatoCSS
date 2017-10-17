@@ -7,6 +7,7 @@ import babel from 'gulp-babel';
 import rename from 'gulp-rename';
 
 import sass from 'gulp-sass';
+import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import mqpacker from 'css-mqpacker';
@@ -45,6 +46,30 @@ gulp.task('sass', () => {
 			notifier.notify({title: 'Sass compile error', message: err.message});
 			this.emit('end');
 		}))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('./stylesheets/css/'));
+});
+
+gulp.task('less', () => {
+	return gulp.src([
+		'./stylesheets/less/*.less'
+	])
+		.pipe(sourcemaps.init())
+		.pipe(less().on('error', function (err) {
+			gutil.log(gutil.colors.bold.red('Less compile error'), err.message);
+			notifier.notify({title: 'Less compile error', message: err.message});
+			this.emit('end');
+		}))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('./stylesheets/css/'));
+});
+
+gulp.task('postprocess', () => {
+	return gulp.src([
+		'./stylesheets/css/*.css',
+		'!./stylesheets/css/*.min.css'
+	])
+		.pipe(sourcemaps.init())
 		.pipe(postcss([
 			autoprefixer(),
 			mqpacker()
@@ -59,6 +84,7 @@ gulp.task('sass', () => {
 
 gulp.task('watch', () => {
 	gulp.watch(['./stylesheets/sass/**/*.scss'], ['sass']);
+	gulp.watch(['./stylesheets/less/**/*.less'], ['less']);
 	gulp.watch(['./js/**/*.js'], ['js']);
 	gulp.watch(['./examples/*.html']).on('change', browserSync.reload);
 });
@@ -72,4 +98,4 @@ gulp.task('browserSync', () => {
 	});
 });
 
-gulp.task('default', ['js', 'sass', 'browserSync', 'watch']);
+gulp.task('default', ['browserSync', 'watch']);
