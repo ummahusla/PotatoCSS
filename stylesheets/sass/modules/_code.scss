@@ -1,0 +1,44 @@
+/* Code */
+
+pre,
+code,
+kbd {
+	font-family: Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+code {
+	background-color: $bg-color;
+	font-size: 13px;
+	margin: 0;
+	padding: 3px 6px;
+	border-radius: 3px;
+	border: 1px solid $border-color;
+}
+
+pre {
+	white-space: pre;
+	border-radius: 3px;
+	background-color: $bg-color;
+	padding: 5px 20px;
+	margin: 5px 0;
+
+	code {
+		font-size: 14px;
+		padding: 0;
+		background-color: transparent;
+		border-radius: 0;
+		border: 0;
+	}
+}
+
+kbd {
+	display: inline-block;
+	background-color: $bg-color;
+	font-size: 13px;
+	margin: 0;
+	padding: 3px 6px;
+	border-radius: 3px;
+	border: 1px solid $border-color;
+	vertical-align: middle;
+	box-shadow: inset 0 -1px 0 $shadow-color;
+}

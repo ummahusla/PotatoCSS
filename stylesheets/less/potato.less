@@ -1,22 +1,23 @@
-/*! PotatoCSS (c) Edvins Antonovs 2016 <https://github.com/ummahusla> under the MIT license <https://raw.githubusercontent.com/ummahusla/PotatoCSS/master/LICENSE.md> */
-
-//* Set charset *//
-
 @charset "UTF-8";
+/*
+* Author: Edvins Antonovs
+* License: MIT License
+* Website: http://potatocss.com/
+*/
 
-//* Import Variables *//
+// Import core
+@import (reference) "core/_variables";
+@import (reference) "core/_mixins";
 
-@DIRECTORY: "_partials/";
-
-@import (reference) "@{DIRECTORY}_variables";
-@import (reference) "@{DIRECTORY}_mixins";
-@import "@{DIRECTORY}_imports";
-@import "@{DIRECTORY}_init";
-@import "@{DIRECTORY}_typography";
-@import "@{DIRECTORY}_grid";
-@import "@{DIRECTORY}_sectioning";
-@import "@{DIRECTORY}_buttons";
-@import "@{DIRECTORY}_tables";
-@import "@{DIRECTORY}_forms";
-@import "@{DIRECTORY}_lists";
-@import "@{DIRECTORY}_util";
+// Import modules
+@import "modules/_global";
+@import "modules/_typography";
+@import "modules/_grid";
+@import "modules/_form";
+@import "modules/_button";
+@import "modules/_table";
+@import "modules/_list";
+@import "modules/_code";
+@import "modules/_panel";
+@import "modules/_label";
+@import "modules/_helpers";
