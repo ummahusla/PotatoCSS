@@ -39,6 +39,42 @@ The following details are estimates, assume [evergreen browser](http://stackover
 * **Edge**              : ALL
 * **Internet Explorer** : 9+
 
+## Building The Code
+
+To build the code, follow these steps.
+
+1. Ensure that [NodeJS](http://nodejs.org/) is installed. This provides the platform on which the build tooling runs.
+2. From the project folder, execute the following command:
+
+  ```shell
+  npm install
+  ```
+3. To build the code from SCSS version, you can now run:
+
+  ```shell
+  gulp build-sass
+  ```
+4. To build the code from LESS version, you can now run:
+
+  ```shell
+  gulp build-less
+  ```
+5. You will find the compiled code in the `stylesheets` and `js` folders.
+6. To watch changes while develop, you can now run:
+
+  ```shell
+  gulp default
+  
+  # It will start watching process and local server with livereloading
+  ```
+7. To test changes in compiled stylesheets, you can now run:
+
+  ```shell
+  gulp test-css
+  # or
+  npm test
+  ```
+
 ## Contributing
 
 Please read the repository's 🗒 [**contributing guide**](CONTRIBUTING.md) for more information on how you can help.
