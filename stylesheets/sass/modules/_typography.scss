@@ -1,0 +1,72 @@
+/* Typography */
+
+* {
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: lighter;
+	line-height: 1.5;
+	color: $primary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 5px 0;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: 28px;
+
+	@include screen($medium) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-size: 18px;
+
+	@include screen($medium) {
+		font-size: 26px;
+	}
+}
+
+h3 {
+	font-size: 15px;
+
+	@include screen($medium) {
+		font-size: 22px;
+	}
+}
+
+h4 {
+	font-size: 14px;
+
+	@include screen($medium) {
+		font-size: 15px;
+	}
+}
+
+h5 {
+	font-size: 16px;
+
+	@include screen($medium) {
+		font-size: 14px;
+	}
+}
+
+h6 {
+	font-size: 16px;
+}
+
+blockquote {
+	margin: 28px 0 28px -36px;
+	padding: 0 0 0 28px;
+	border-left: 6px solid $primary-color;
+}

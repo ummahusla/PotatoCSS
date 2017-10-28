@@ -1,4 +1,4 @@
-//* Utilities *//
+/* Helpers */
 
 .text-center {
 	text-align: center;
@@ -45,5 +45,18 @@
 
 	&-y {
 		overflow-y: auto;
+	}
+}
+
+.hide-overflow,
+.forbid-overflow {
+	overflow: hidden;
+
+	&-x {
+		overflow-y: hidden;
+	}
+
+	&-y {
+		overflow-y: hidden;
 	}
 }
