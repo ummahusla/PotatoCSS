@@ -1,0 +1,14 @@
+//* Images *//
+
+img {
+    max-width: 100%;
+    
+    &.img-thumb {
+        border: 1px solid $primary-color;
+    }
+
+    &.round {
+        border-radius: 4px;
+    }
+    
+}
