@@ -7,7 +7,7 @@
 	],
 	"main": "stylesheets/css/potato.css",
 	"scripts": {
-		"install": "gulpfile.js"
+		"install": "gulp"
 	},
 	"repository": {
 		"type": "git",
