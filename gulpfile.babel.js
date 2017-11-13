@@ -5,6 +5,10 @@ import notifier from 'node-notifier';
 import gutil from 'gulp-util';
 import babel from 'gulp-babel';
 import rename from 'gulp-rename';
+import runSequence from 'run-sequence';
+import stylelint from 'stylelint';
+import stylefmt from 'gulp-stylefmt';
+import reporter from 'postcss-reporter';
 
 import sass from 'gulp-sass';
 import less from 'gulp-less';
@@ -14,12 +18,12 @@ import mqpacker from 'css-mqpacker';
 
 import csso from 'gulp-csso';
 
-
 const browserSync = require('browser-sync').create();
 
 gulp.task('js', () => {
 	return gulp.src([
-		'./js/**/*.js'
+		'./js/**/*.js',
+		'!./js/**/*.min.js'
 	])
 		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(concat('potato.min.js'))
@@ -40,14 +44,16 @@ gulp.task('sass', () => {
 	])
 		.pipe(sourcemaps.init())
 		.pipe(sass({
-			outputStyle: 'expanded'
+			outputStyle: 'expanded',
+			precision: 8
 		}).on('error', function (err) {
 			gutil.log(gutil.colors.bold.red('Sass compile error'), err.message);
 			notifier.notify({title: 'Sass compile error', message: err.message});
 			this.emit('end');
 		}))
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./stylesheets/css/'));
+		.pipe(gulp.dest('./stylesheets/css/'))
+		.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('less', () => {
@@ -61,7 +67,8 @@ gulp.task('less', () => {
 			this.emit('end');
 		}))
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./stylesheets/css/'));
+		.pipe(gulp.dest('./stylesheets/css/'))
+		.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('postprocess', () => {
@@ -69,17 +76,29 @@ gulp.task('postprocess', () => {
 		'./stylesheets/css/*.css',
 		'!./stylesheets/css/*.min.css'
 	])
-		.pipe(sourcemaps.init())
+		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(postcss([
 			autoprefixer(),
 			mqpacker()
 		]))
+		.pipe(stylefmt())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('./stylesheets/css/'))
 		.pipe(csso())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('./stylesheets/css/'))
 		.pipe(browserSync.stream());
+});
+
+gulp.task('test-css', () => {
+	return gulp.src([
+		'./stylesheets/css/*.css',
+		'!./stylesheets/css/*.min.css'
+	])
+		.pipe(postcss([
+			stylelint(),
+			reporter({ clearReportedMessages: true })
+		]));
 });
 
 gulp.task('watch', () => {
@@ -96,6 +115,14 @@ gulp.task('browserSync', () => {
 			index: "/examples/index.html"
 		}
 	});
+});
+
+gulp.task('build-sass', function () {
+	runSequence('sass', ['postprocess', 'js'], 'test-css');
+});
+
+gulp.task('build-less', function () {
+	runSequence('less', ['postprocess', 'js'], 'test-css');
 });
 
 gulp.task('default', ['browserSync', 'watch']);
