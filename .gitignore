@@ -3,6 +3,7 @@
 # System files
 .dat
 .thumbs
+.DS_Store
 
 # Sublime Text #
 .sublime
@@ -23,7 +24,6 @@
 
 # Node
 node_modules/
-package-lock.json
 
 # Test folders
 test/

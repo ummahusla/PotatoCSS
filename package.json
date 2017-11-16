@@ -42,8 +42,14 @@
 		"gulp-rename": "^1.2.2",
 		"gulp-sass": "^3.1.0",
 		"gulp-sourcemaps": "^2.6.1",
+		"gulp-stylefmt": "^1.1.0",
 		"gulp-util": "^3.0.8",
-		"node-notifier": "^5.1.2"
+		"node-notifier": "^5.1.2",
+		"postcss-reporter": "^5.0.0",
+		"run-sequence": "^2.2.0",
+		"stylelint": "^8.2.0",
+		"stylelint-config-standard": "^17.0.0",
+		"stylelint-csstree-validator": "^1.2.0"
 	},
 	"browserslist": [
 		"last 2 version",
