@@ -1,5 +1,5 @@
 <p align="center"><img src="logo.png" alt="PotatoCSS" /></p>
-<h3 align="center"><a href="http://potatocss.com/">PotatoCSS</a></h3>
+<h3 align="center"><a href="https://potatocss.github.io/">PotatoCSS</a></h3>
 <p align="center"><small><code>Simple CSS framework for hackers. Simple as potato.</code></small></p>
 
 [![npm version](https://badge.fury.io/js/potato-css.svg)](https://badge.fury.io/js/potato-css)
@@ -11,7 +11,7 @@ ___
 
 ## Installation
 
-[**PotatoCSS**](http://potatocss.com/) can be installed via the methods below,
+[**PotatoCSS**](https://potatocss.github.io/) can be installed via the methods below,
 
 * Manual: [Download](https://github.com/ummahusla/PotatoCSS/archive/master.zip)
 * via NPM: `npm install potato-css`
@@ -21,7 +21,7 @@ ___
 
 Just grab `potato.css` or `potato.min.css` from the `/stylesheets/css` folder and shove it where you store the CSS files for your project.
 
-Demo can be found at [**http://potatocss.com**](http://potatocss.com).
+Demo can be found at [**https://potatocss.github.io/**](https://potatocss.github.io/).
 
 Alternately, you can find examples and snippets to use with PotatoCSS in the [example folder](https://github.com/ummahusla/PotatoCSS/examples).
 
@@ -81,10 +81,10 @@ Please read the repository's 🗒 [**contributing guide**](CONTRIBUTING.md) for 
 
 ## License
 
-[**PotatoCSS**](http://potatocss.com/) is licensed under the [**MIT License**](LICENSE.md).
+[**PotatoCSS**](https://potatocss.github.io/) is licensed under the [**MIT License**](LICENSE.md).
 
 ## Credits
 
-[**PotatoCSS**](http://potatocss.com) was created for [**Hacktoberfest**](https://hacktoberfest.digitalocean.com/) by [**Edvins Antonovs**](https://twitter.com/edvinsantonovs). You can find more details in [**this blog post**](http://edvinsantonovs.co.uk/potatocss-and-hacktoberfest2016/).
+[**PotatoCSS**](https://potatocss.github.io/) was created for [**Hacktoberfest**](https://hacktoberfest.digitalocean.com/) by [**Edvins Antonovs**](https://twitter.com/edvinsantonovs). You can find more details in [**this blog post**](http://edvinsantonovs.co.uk/potatocss-and-hacktoberfest2016/).
 
 🎉 Big thanks to all the [**contributors**](https://github.com/ummahusla/PotatoCSS/graphs/contributors).
